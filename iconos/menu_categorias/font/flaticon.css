@@ -1,0 +1,262 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/02/2017 04:43
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+font-family: Flaticon;
+font-size: 25px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-ajustes:before { content: "\f100"; }
+.flaticon-ajustes-1:before { content: "\f101"; }
+.flaticon-archivo:before { content: "\f102"; }
+.flaticon-avance-rapido:before { content: "\f103"; }
+.flaticon-avatar:before { content: "\f104"; }
+.flaticon-avena:before { content: "\f105"; }
+.flaticon-avion-de-papel:before { content: "\f106"; }
+.flaticon-base-de-datos:before { content: "\f107"; }
+.flaticon-bateria-carga-media:before { content: "\f108"; }
+.flaticon-bloqueado:before { content: "\f109"; }
+.flaticon-bloquear:before { content: "\f10a"; }
+.flaticon-bloquear-1:before { content: "\f10b"; }
+.flaticon-bloquear-2:before { content: "\f10c"; }
+.flaticon-bloquear-3:before { content: "\f10d"; }
+.flaticon-borrar:before { content: "\f10e"; }
+.flaticon-borrar-1:before { content: "\f10f"; }
+.flaticon-borrar-2:before { content: "\f110"; }
+.flaticon-borrar-3:before { content: "\f111"; }
+.flaticon-borrar-4:before { content: "\f112"; }
+.flaticon-borrar-5:before { content: "\f113"; }
+.flaticon-borrar-6:before { content: "\f114"; }
+.flaticon-borrar-7:before { content: "\f115"; }
+.flaticon-borrar-8:before { content: "\f116"; }
+.flaticon-boton-de-menu-de-tres-lineas-horizontales:before { content: "\f117"; }
+.flaticon-boton-de-reproduccion:before { content: "\f118"; }
+.flaticon-boton-de-reproduccion-1:before { content: "\f119"; }
+.flaticon-boton-eliminar:before { content: "\f11a"; }
+.flaticon-boton-redondo-eliminar:before { content: "\f11b"; }
+.flaticon-brujula:before { content: "\f11c"; }
+.flaticon-buscar:before { content: "\f11d"; }
+.flaticon-buscar-lupa-simbolo-de-interfaz:before { content: "\f11e"; }
+.flaticon-busqueda:before { content: "\f11f"; }
+.flaticon-busqueda-1:before { content: "\f120"; }
+.flaticon-cafe:before { content: "\f121"; }
+.flaticon-cafe-1:before { content: "\f122"; }
+.flaticon-camara-de-fotos:before { content: "\f123"; }
+.flaticon-cancelar:before { content: "\f124"; }
+.flaticon-casa:before { content: "\f125"; }
+.flaticon-casa-1:before { content: "\f126"; }
+.flaticon-casa-2:before { content: "\f127"; }
+.flaticon-casa-3:before { content: "\f128"; }
+.flaticon-casa-4:before { content: "\f129"; }
+.flaticon-cerrar:before { content: "\f12a"; }
+.flaticon-clave:before { content: "\f12b"; }
+.flaticon-clip-sujetapapeles:before { content: "\f12c"; }
+.flaticon-comercio:before { content: "\f12d"; }
+.flaticon-comercio-1:before { content: "\f12e"; }
+.flaticon-comercio-2:before { content: "\f12f"; }
+.flaticon-comida:before { content: "\f130"; }
+.flaticon-comida-1:before { content: "\f131"; }
+.flaticon-comida-2:before { content: "\f132"; }
+.flaticon-comida-3:before { content: "\f133"; }
+.flaticon-comida-4:before { content: "\f134"; }
+.flaticon-comida-5:before { content: "\f135"; }
+.flaticon-comida-6:before { content: "\f136"; }
+.flaticon-compras:before { content: "\f137"; }
+.flaticon-compras-1:before { content: "\f138"; }
+.flaticon-compras-2:before { content: "\f139"; }
+.flaticon-compras-3:before { content: "\f13a"; }
+.flaticon-comprobado:before { content: "\f13b"; }
+.flaticon-comunicacion:before { content: "\f13c"; }
+.flaticon-construccion:before { content: "\f13d"; }
+.flaticon-contorno-de-avion:before { content: "\f13e"; }
+.flaticon-corazon:before { content: "\f13f"; }
+.flaticon-descargar-de-la-nube:before { content: "\f140"; }
+.flaticon-detener:before { content: "\f141"; }
+.flaticon-dinero:before { content: "\f142"; }
+.flaticon-dinero-1:before { content: "\f143"; }
+.flaticon-dinero-2:before { content: "\f144"; }
+.flaticon-dinero-3:before { content: "\f145"; }
+.flaticon-dinero-4:before { content: "\f146"; }
+.flaticon-dinero-5:before { content: "\f147"; }
+.flaticon-dinero-6:before { content: "\f148"; }
+.flaticon-dinero-7:before { content: "\f149"; }
+.flaticon-dinero-8:before { content: "\f14a"; }
+.flaticon-edificio:before { content: "\f14b"; }
+.flaticon-edificios:before { content: "\f14c"; }
+.flaticon-edificios-1:before { content: "\f14d"; }
+.flaticon-eliminar:before { content: "\f14e"; }
+.flaticon-eliminar-1:before { content: "\f14f"; }
+.flaticon-eliminar-2:before { content: "\f150"; }
+.flaticon-escudo:before { content: "\f151"; }
+.flaticon-escudo-1:before { content: "\f152"; }
+.flaticon-escudo-2:before { content: "\f153"; }
+.flaticon-escudo-3:before { content: "\f154"; }
+.flaticon-escudo-4:before { content: "\f155"; }
+.flaticon-eslabones-de-cadena:before { content: "\f156"; }
+.flaticon-espalda:before { content: "\f157"; }
+.flaticon-espalda-1:before { content: "\f158"; }
+.flaticon-estrella:before { content: "\f159"; }
+.flaticon-etiqueta:before { content: "\f15a"; }
+.flaticon-etiqueta-1:before { content: "\f15b"; }
+.flaticon-etiqueta-del-precio:before { content: "\f15c"; }
+.flaticon-expulsar:before { content: "\f15d"; }
+.flaticon-facebook-logo-en-boton-circular-esbozado-de-social-simbolo:before { content: "\f15e"; }
+.flaticon-flecha-circular:before { content: "\f15f"; }
+.flaticon-flecha-circular-1:before { content: "\f160"; }
+.flaticon-flecha-de-descarga:before { content: "\f161"; }
+.flaticon-flecha-de-descarga-1:before { content: "\f162"; }
+.flaticon-flecha-de-descarga-2:before { content: "\f163"; }
+.flaticon-flecha-derecha:before { content: "\f164"; }
+.flaticon-flecha-derecha-1:before { content: "\f165"; }
+.flaticon-flecha-derecha-2:before { content: "\f166"; }
+.flaticon-flecha-hacia-abajo:before { content: "\f167"; }
+.flaticon-flecha-hacia-arriba:before { content: "\f168"; }
+.flaticon-flecha-hacia-arriba-1:before { content: "\f169"; }
+.flaticon-flecha-izquierda:before { content: "\f16a"; }
+.flaticon-flechas:before { content: "\f16b"; }
+.flaticon-flechas-1:before { content: "\f16c"; }
+.flaticon-flechas-2:before { content: "\f16d"; }
+.flaticon-flechas-3:before { content: "\f16e"; }
+.flaticon-flechas-4:before { content: "\f16f"; }
+.flaticon-flechas-5:before { content: "\f170"; }
+.flaticon-flechas-6:before { content: "\f171"; }
+.flaticon-flechas-7:before { content: "\f172"; }
+.flaticon-flechas-8:before { content: "\f173"; }
+.flaticon-flechas-9:before { content: "\f174"; }
+.flaticon-formas:before { content: "\f175"; }
+.flaticon-foto:before { content: "\f176"; }
+.flaticon-foto-1:before { content: "\f177"; }
+.flaticon-foto-10:before { content: "\f178"; }
+.flaticon-foto-11:before { content: "\f179"; }
+.flaticon-foto-2:before { content: "\f17a"; }
+.flaticon-foto-3:before { content: "\f17b"; }
+.flaticon-foto-4:before { content: "\f17c"; }
+.flaticon-foto-5:before { content: "\f17d"; }
+.flaticon-foto-6:before { content: "\f17e"; }
+.flaticon-foto-7:before { content: "\f17f"; }
+.flaticon-foto-8:before { content: "\f180"; }
+.flaticon-foto-9:before { content: "\f181"; }
+.flaticon-fruta:before { content: "\f182"; }
+.flaticon-fruta-1:before { content: "\f183"; }
+.flaticon-fruta-2:before { content: "\f184"; }
+.flaticon-fruta-3:before { content: "\f185"; }
+.flaticon-fruta-4:before { content: "\f186"; }
+.flaticon-globo-terraqueo:before { content: "\f187"; }
+.flaticon-hogar:before { content: "\f188"; }
+.flaticon-hoja:before { content: "\f189"; }
+.flaticon-igualada:before { content: "\f18a"; }
+.flaticon-imagen:before { content: "\f18b"; }
+.flaticon-imagen-1:before { content: "\f18c"; }
+.flaticon-info:before { content: "\f18d"; }
+.flaticon-internet:before { content: "\f18e"; }
+.flaticon-jugar:before { content: "\f18f"; }
+.flaticon-jugar-1:before { content: "\f190"; }
+.flaticon-jugar-2:before { content: "\f191"; }
+.flaticon-la-computacion-en-nube:before { content: "\f192"; }
+.flaticon-letra-x:before { content: "\f193"; }
+.flaticon-linea:before { content: "\f194"; }
+.flaticon-linea-1:before { content: "\f195"; }
+.flaticon-lista:before { content: "\f196"; }
+.flaticon-lista-1:before { content: "\f197"; }
+.flaticon-los-granos-de-cafe:before { content: "\f198"; }
+.flaticon-lupa:before { content: "\f199"; }
+.flaticon-lupa-de-busqueda:before { content: "\f19a"; }
+.flaticon-manzana:before { content: "\f19b"; }
+.flaticon-manzana-1:before { content: "\f19c"; }
+.flaticon-marcador-de-posicion:before { content: "\f19d"; }
+.flaticon-marcador-de-posicion-1:before { content: "\f19e"; }
+.flaticon-mas:before { content: "\f19f"; }
+.flaticon-menos:before { content: "\f1a0"; }
+.flaticon-menos-1:before { content: "\f1a1"; }
+.flaticon-metodo-de-pago:before { content: "\f1a2"; }
+.flaticon-microfono:before { content: "\f1a3"; }
+.flaticon-multimedia:before { content: "\f1a4"; }
+.flaticon-multimedia-1:before { content: "\f1a5"; }
+.flaticon-musica:before { content: "\f1a6"; }
+.flaticon-naturaleza:before { content: "\f1a7"; }
+.flaticon-naturaleza-1:before { content: "\f1a8"; }
+.flaticon-naturaleza-2:before { content: "\f1a9"; }
+.flaticon-negocios:before { content: "\f1aa"; }
+.flaticon-nube:before { content: "\f1ab"; }
+.flaticon-ondas-de-senal:before { content: "\f1ac"; }
+.flaticon-ordenador:before { content: "\f1ad"; }
+.flaticon-ordenador-1:before { content: "\f1ae"; }
+.flaticon-ordenador-2:before { content: "\f1af"; }
+.flaticon-participacion:before { content: "\f1b0"; }
+.flaticon-patatas:before { content: "\f1b1"; }
+.flaticon-pausa:before { content: "\f1b2"; }
+.flaticon-persona:before { content: "\f1b3"; }
+.flaticon-personas:before { content: "\f1b4"; }
+.flaticon-personas-1:before { content: "\f1b5"; }
+.flaticon-personas-2:before { content: "\f1b6"; }
+.flaticon-potencia:before { content: "\f1b7"; }
+.flaticon-potencia-1:before { content: "\f1b8"; }
+.flaticon-presupuesto:before { content: "\f1b9"; }
+.flaticon-proximo:before { content: "\f1ba"; }
+.flaticon-proximo-1:before { content: "\f1bb"; }
+.flaticon-proximo-2:before { content: "\f1bc"; }
+.flaticon-radio:before { content: "\f1bd"; }
+.flaticon-rebobinar:before { content: "\f1be"; }
+.flaticon-recargar:before { content: "\f1bf"; }
+.flaticon-recargar-1:before { content: "\f1c0"; }
+.flaticon-refrescar:before { content: "\f1c1"; }
+.flaticon-reloj:before { content: "\f1c2"; }
+.flaticon-reproducir:before { content: "\f1c3"; }
+.flaticon-reproductor-de-musica:before { content: "\f1c4"; }
+.flaticon-signos:before { content: "\f1c5"; }
+.flaticon-simbolo:before { content: "\f1c6"; }
+.flaticon-simbolo-de-resta:before { content: "\f1c7"; }
+.flaticon-simbolo-de-suma:before { content: "\f1c8"; }
+.flaticon-simbolos:before { content: "\f1c9"; }
+.flaticon-simbolos-1:before { content: "\f1ca"; }
+.flaticon-sobre:before { content: "\f1cb"; }
+.flaticon-sobre-abierto:before { content: "\f1cc"; }
+.flaticon-social:before { content: "\f1cd"; }
+.flaticon-social-1:before { content: "\f1ce"; }
+.flaticon-subir-a-la-nube:before { content: "\f1cf"; }
+.flaticon-tableta:before { content: "\f1d0"; }
+.flaticon-tecnologia:before { content: "\f1d1"; }
+.flaticon-tecnologia-1:before { content: "\f1d2"; }
+.flaticon-tecnologia-10:before { content: "\f1d3"; }
+.flaticon-tecnologia-2:before { content: "\f1d4"; }
+.flaticon-tecnologia-3:before { content: "\f1d5"; }
+.flaticon-tecnologia-4:before { content: "\f1d6"; }
+.flaticon-tecnologia-5:before { content: "\f1d7"; }
+.flaticon-tecnologia-6:before { content: "\f1d8"; }
+.flaticon-tecnologia-7:before { content: "\f1d9"; }
+.flaticon-tecnologia-8:before { content: "\f1da"; }
+.flaticon-tecnologia-9:before { content: "\f1db"; }
+.flaticon-transporte:before { content: "\f1dc"; }
+.flaticon-transporte-1:before { content: "\f1dd"; }
+.flaticon-transporte-2:before { content: "\f1de"; }
+.flaticon-usuario:before { content: "\f1df"; }
+.flaticon-usuario-1:before { content: "\f1e0"; }
+.flaticon-vacaciones:before { content: "\f1e1"; }
+.flaticon-volumen:before { content: "\f1e2"; }
+.flaticon-volumen-1:before { content: "\f1e3"; }
+.flaticon-web:before { content: "\f1e4"; }
+.flaticon-wifi:before { content: "\f1e5"; }
+.flaticon-zanahoria:before { content: "\f1e6"; }

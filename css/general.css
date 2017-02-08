@@ -1,0 +1,1139 @@
+
+
+html,
+body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden;
+  margin-top: 2%;
+
+}
+ 
+body {
+  display: table;
+  width: 100%;
+}
+ 
+ footer {
+   height: 200px;
+background: #DAD9D9;
+ }
+ .clase-general{
+  display: table-row;
+}
+ 
+header {
+    overflow: hidden;
+    height: 65px;
+    margin-left:0px;
+	margin-top:0px;
+	left: 0; 
+	top: 0; 
+	width: 100%;
+	position: fixed;
+
+}
+ 
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:0px auto;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+ 
+nav ul {
+	list-style:none;
+
+}
+ 
+nav > ul {
+	display:table;
+	width: 100%;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	max-width:160%;
+	background:#333634;
+	position:relative;
+	height:74px;
+
+}
+ 
+nav > ul li {
+	display:table-cell;
+	vertical-align: middle;
+}
+ 
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+ 
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	font-size: 17px;
+	line-height:25px;
+	padding:15px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul li a:hover{
+	color:#18C459;
+}
+
+nav > ul li a:active{
+	color:#249950;
+}
+nav > ul li a{
+	margin: 0;
+	text-decoration: none;
+	vertical-align: middle;
+    padding: 0;
+}
+
+
+@font-face {
+  font-family: "iconos";
+  src: url("../iconos/menu_categorias/font/Flaticon.eot");
+  src: url("../iconos/menu_categorias/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../iconos/menu_categorias/font/Flaticon.woff") format("woff"),
+       url("../iconos/menu_categorias/font/Flaticon.ttf") format("truetype"),
+       url("../iconos/menu_categorias/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "iconos";
+    src: url("../iconos/menu_categorias/font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.usuario:before { 
+   content: "\f1df";
+   font-family: iconos;
+   font-size: 30px;
+   vertical-align: middle;
+   position: relative;
+   top: -4px;
+
+
+}
+
+.carrito-compras:before{
+    content: "\f12f";
+   font-family: iconos;
+   font-size: 30px;
+   vertical-align: middle;
+   font-weight: 500;
+   position: relative;
+   top: -4px;
+}
+
+ .icono_buscar:before{
+ 	font-family: iconos;
+	content: "\f11d";
+	vertical-align: middle;
+	font-size: 150%;
+	position: relative;
+	top: 3px;
+	text-align: center;
+	}
+ 
+ .icono_menu:before {
+  content: "\f117"; 
+  font-family: iconos;
+  font-size:140%;
+  vertical-align: middle;
+  position: relative;
+  left:-60%;
+
+
+}
+
+
+/*MENU CATEGORIAS*/
+#menu_categorias {
+	width:25%;
+	height:100%;
+    margin-top: 60px;
+   position:fixed;
+   left: -25%;
+
+
+
+}
+ 
+#menu_categorias nav {
+	width:100%;
+	height:100%;
+	max-width:1000px;
+	margin:25px auto;
+   background:#333634;
+	
+	
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+#menu_categorias nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+#menu_categorias nav ul li {
+	float:none;
+	display: block;
+	margin-left: -25px;
+}
+#menu_categorias nav ul li a {
+	color:#fff;
+	padding:12px;
+	display:block;
+	text-decoration:none;
+	text-align: left;
+}
+ 
+#menu_categorias nav ul li span {
+	margin-right:10px;
+	margin-left: -25px;
+}
+ 
+#menu_categorias nav ul li a:hover {
+	background-color:#18C459;
+}
+.menu_bar {
+		display:block;
+		width:100%;
+		
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:left;
+		font-size:25px;
+
+	}
+
+
+   
+
+
+/*BOTONES*/
+
+
+.myButton {
+	background-color:#FFFFFF;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:16px;
+	padding:4px 16px;
+	text-decoration:none;
+	text-shadow:0px 0.5px 0px #2f6627;
+
+
+}
+.myButton:hover {
+	background-color:#18ab29;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+	background-color:#08A81A;
+}
+
+        
+.myButtoni {
+     background:transparent;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #FFFFFF;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+
+
+}
+.myButtoni:hover {
+	background-color:#1FAB54;
+	color: #FFFFFF;
+}
+.myButtoni:active {
+	background-color:#249950;
+	color: #FFFFFF;
+}
+
+.myButton_buscar {
+	background-color:#18C459;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:Arial;
+	width:6%;
+	height:35px;
+    vertical-align: middle;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px; 
+
+
+
+}
+
+.iconos_menu_super
+{
+	font-size: 25px;
+	font-family: cursive;
+	vertical-align: middle;
+}
+.myButton_buscar:hover {
+	background-color:#1FAB54;
+	color: #FFFFFF;
+}
+.myButton_buscar:active {
+	background-color:#249950;
+	color: #FFFFFF;
+}
+
+.logo_agrosell{
+	width:80px;
+	position: relative;
+	left: -45%;
+
+}
+
+.icono_inicio{
+	color: #FFFFFF;
+	font-size: 25px;
+	vertical-align: middle;
+	
+}  
+.icono_inicio:hover{
+	color: #0DD33C;
+
+}
+
+.buscar_div{
+width:140%;
+}
+
+#li_buscar{
+position: relative;
+left:-10%;
+}
+
+#li_iniciar_sesion{
+position: relative;
+right:-3%;
+}
+
+#li_usuario{
+position: relative;
+right:-5.5%;	
+}
+
+
+#li_carrito_compras{
+position: relative;
+right:-3%;	
+}
+
+
+.usuario_div{
+width:100%;
+}
+.caja_buscar{
+border:2px solid #DEE4B8;
+font-family:Arial;
+font-weight: bold;
+font-style: normal;
+width: 92%;
+height:35px;
+vertical-align: middle;
+padding-left: 10px;
+border-bottom-left-radius:3px;
+border-top-left-radius: 3px; 
+
+
+}
+
+/*DIV PARTE DE PRODUCTOS*/
+
+.div_categorias{
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 100%;
+	height: 100%;
+	max-height:160%;
+	max-width: 160%;
+
+
+}
+.presentacion_productos{
+width: 202.5px;
+height: 300px;
+display: inline-block;
+overflow:hidden;
+border: 1px solid;
+border-color: #D5D5D5;
+margin: 2px;
+}
+.tamaño_imagen{
+width: 200px;
+height: 200px;
+}
+
+.div_boton{
+	text-align: center;
+	background-color:#F6F6F6;
+	height: 50px;
+
+
+}
+
+.div_texto{
+	width: 202.5px;
+	height: 50px;
+	background-color:#F6F6F6;
+	font-family: cursive;
+	text-align: center;
+	font-size: 13px;
+	font-weight:bolder;
+
+}
+.monto{
+	color: #CD0909;
+	font-size: 17px;
+}
+
+/*SEGUNDA PAGINA*/
+.myButton_pag2 {
+	background-color:#FFFFFF;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 16px;
+	text-decoration:none;
+	text-shadow:0px 0.5px 0px #2f6627;
+
+
+}
+.myButton_pag2:hover {
+	background-color:#18ab29;
+}
+.myButton_pag2:active {
+	position:relative;
+	top:1px;
+	background-color:#08A81A;
+}
+
+.parte_superior{
+height:40px;
+margin-top: 15px;
+}
+
+.parte_inferior{
+height: 500px;
+
+
+}
+/*PARTE SUPERIOR*/
+
+.parte_superior_texto{
+font-size: 30px;
+font-family: cursive;	
+vertical-align: middle;
+position: relative;
+top: 25px;
+
+
+}
+.parte_superior_texto_direccion{
+font-size: 14px;
+font-family: cursive;	
+vertical-align: middle;
+color: #6B6969;
+text-decoration: none;
+}
+.parte_superior_texto_direccion:hover{
+color: #3C3B3B;
+}
+.parte_superior_titulo{
+text-align: left;
+font-size: 30px;
+display: inline-block;
+width: 80%;
+vertical-align: middle;
+}
+.parte_superior_iconos{
+text-align:left;
+font-size: 20px;
+display: inline-block;
+width: 18%;
+vertical-align: middle;
+}
+
+.parte_superior_iconos_facebook{
+text-decoration: none;
+color: #474545;
+vertical-align: middle;
+}
+
+.parte_superior_iconos_facebook:hover{
+
+color: #1328C4;
+
+}
+
+.parte_superior_iconos_twitter{
+text-decoration: none;
+color: #474545;
+font-size:24px; 
+vertical-align: middle;
+}
+.parte_superior_iconos_twitter:hover{
+color: #15BEE8;
+
+}
+
+.parte_superior_iconos_youtobe{
+text-decoration: none;
+color: #474545;
+font-size:28px; 
+vertical-align: middle;
+}
+
+.parte_superior_iconos_youtobe:hover{
+color: #E80C0C;
+
+}
+
+.parte_superior_iconos_instagram{
+text-decoration: none;
+color: #474545;
+font-size:22px; 
+vertical-align: middle;
+}
+
+.parte_superior_iconos_instagram:hover{
+color: #E716E5;
+
+}
+
+
+/*PARTE INFERIOR*/
+.parte_imagen{
+width: 420px;
+height: 500px;
+/*background: #6F997E;*/
+display: inline-block;
+overflow:hidden;
+
+}
+
+.parte_especificaciones{
+width: 380px;
+height: 500px;
+display: inline-block;
+overflow:hidden;
+}
+
+.parte_contacto{
+width: 465px;
+height: 500px;
+display: inline-block;
+overflow:hidden;
+}
+/*PARTE IMEGEN*/
+.imagen_tamaño_pag2{
+width:400px;
+height: 500px;
+}
+
+/*PARTE ESPECIFICACIONES*/
+.parte_especificaciones_contenido{
+color: #616161;
+font-size:16px;
+font-family:arial;
+letter-spacing: 1px;
+
+}
+.parte_especificaciones_div{
+font-size:16px;
+font-family:cursive;
+
+}
+
+/*PARTE CONTACTOS*/
+.contacto_superior{
+height:70px;
+overflow:hidden;
+text-align: center;
+/*background: #0D5112;*/
+}
+.contacto_medio{
+height: 400px;
+overflow:hidden;
+
+}
+.contacto_inferior{
+height: 100px;
+overflow:hidden;
+
+
+/*background: #3764E5;*/
+}
+
+/*PARTE SUPERIOR CONTACTOS*/
+.contacto_superior_monto{
+	font-size: 30px;
+	font-family: cursive;
+	color: #940909;
+}
+
+.contacto_superior_precio{
+	font-size: 20px;
+	font-family: cursive;
+	color: #000000;
+}
+.contacto_superior_div{
+	display: inline-block;
+	overflow:hidden;
+	vertical-align: middle;
+	text-align: center;
+
+}
+/*PARTE MEDIO CONTACTO*/
+
+.contacto_medio_div_formulario{
+	display: inline-block;
+	overflow:hidden;
+	text-align: left;
+	font-family:arial;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.contacto_medio_div_formulario_input{
+border-radius: 8px;
+width: 300px;
+height: 19px;
+margin: 1px;
+border: 1.7px solid;
+border-color: #6F6C6C;
+padding-left: 10px;
+
+
+}
+.contacto_medio_div_formulario_input_foto{
+height: 22px;
+padding-left: 0px;
+padding-right: 10px;
+
+}
+
+.contacto_medio_recojo_texto{
+	font-size: 20px;
+	font-family: cursive;
+	color:#817F7F;
+}
+.contacto_medio_recojo_texto:hover
+{
+	color: #4C4C4C;
+}
+
+.contacto_medio_div_recojo{
+	display: inline-block;
+	overflow:hidden;
+    text-align: center;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.contacto_medio_div_recojo_num_dias{
+	display: inline-block;
+	overflow:hidden;
+	font-size: 30px;
+	font-weight: bolder;
+	font-style:cursive;
+	color: #AE0B0B;
+	vertical-align: middle;
+
+}
+
+.contacto_medio_div_recojo_texto_dias{
+	display: inline-block;
+	overflow:hidden;
+    font-size: 18px;
+	font-style: arial;
+	vertical-align: middle;
+}
+
+
+/*ESTRELLITAS*/
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color:#0D9C17;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+/*PARTE INFERIOR CONTACTO*/
+
+.contacto_inferior_link{
+text-decoration: none;
+font-size:15px;
+margin-left:250px;
+color:#616161;
+font-family: arial;
+}
+.contacto_inferior_link:hover{
+	color: #13DC2F;
+}
+.contacto_inferior_link_icono_llamar{
+font-size: 25px;
+vertical-align: middle;
+color: #12F012;
+
+}
+.contacto_inferior_link_icono_candado{
+font-size: 25px;
+vertical-align: middle;
+color: #EBE426;
+margin-left:5px;
+margin-right: -5px;
+}
+.contacto_inferior_link_div{
+display: inline-block;
+overflow:hidden;
+vertical-align: middle;
+margin-left:5px;
+
+
+}
+
+.contacto_inferior_texto_mapa{
+font-size: 14px;
+font-family: arial;
+color: #242424;
+
+
+}
+
+
+/*PIE E PAGINA*/
+.pie_pagina{
+	height: 200px;
+	background: #DAD9D9;
+}
+
+
+.pie_pagina_suscribirse{
+	width: 100%;
+	max-width: 160%;
+	height: 30%;
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+}
+
+.pie_pagina_input_suscribirse{
+width:40%;
+height: 30px;
+border-radius: 4px;
+font-family: arial;
+font-size: 16px;
+border: 1px solid;
+border-color: #5C5B5B;
+margin-left: 20px;
+padding-left: 10px;
+margin-top:10px;
+}
+
+.pie_pagina_boton_suscribirse{
+    
+	background:#333634;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:17px;
+	padding:8px 16px;
+	text-decoration:none;
+	text-shadow:0px 0.5px 0px #2f6627;
+	margin-left:2px;
+}
+.pie_pagina_boton_suscribirse:hover {
+	background:#2C2D2C;
+	color: #FFFFFF;
+}
+.pie_pagina_boton_suscribirse:active {
+	background:#222121;
+	color: #FFFFFF;
+}
+
+
+.pie_pagina_forma_pago_div{
+	text-align: center;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.pie_pagina_forma_pago_imagen_efectivo
+{
+	width: 90px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+.pie_pagina_forma_pago_imagen_mastercard
+{
+	width: 90px;
+	height: 80px;
+	vertical-align: middle;
+}
+
+.pie_pagina_forma_pago_imagen_visa
+{
+	width: 80px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+/*INPUTS VALIDOS*/
+
+input {
+	border: 1px solid #6A6868;
+}
+input:required:valid {
+ 
+border: 1px solid green;
+ 
+}
+/*
+input:required:invalid {
+ 
+border: 1px solid red;
+ 
+}
+*/
+ 
+
+@media screen and (max-width:1100px) {
+
+
+.icono_menu:before {
+  left:-75%;
+
+}
+
+.caja_buscar{
+width: 85%;
+position: relative;
+right: -5%;
+
+}
+
+.logo_agrosell{
+position: relative;
+left: -35%;
+
+}
+
+#li_usuario{
+position: relative;
+right:-3%;
+}
+
+
+#li_carrito_compras{
+position: relative;
+right:-2%;	
+}
+
+.myButton_buscar {
+   width:8%;
+}
+
+
+}
+
+@media screen and (max-width:800px) {
+
+
+.icono_menu:before {
+  left:-95%;
+
+}
+
+#li_iniciar_sesion{
+position: relative;
+right:2%;
+}
+
+#li_usuario{
+position: relative;
+right:3%;
+}
+
+
+#li_carrito_compras{
+position: relative;
+right:3%;	
+}
+
+.caja_buscar{
+width: 75%;
+position: relative;
+right: -5%;
+
+}
+
+.myButton_buscar {
+   width:8%;
+}
+
+}
+
+@media screen and (max-width:700px) {
+
+
+#li_iniciar_sesion{
+width: 28%;
+}
+
+
+.myButton_buscar {
+   width:9%;
+}
+
+.logo_agrosell{
+	width:60px;
+	position: relative;
+	left: -36%;
+
+}
+
+.caja_buscar{
+width:66% ;
+position: relative;
+right: -10%;
+
+}
+.myButton_buscar {
+   position: relative;
+   right:-4%;
+
+}
+
+ 
+}
+
+@media screen and (max-width:600px) {
+
+.logo_agrosell{
+	width:60px;
+	position: relative;
+	left: -40%;
+
+}	
+.caja_buscar{
+width:50% ;
+position: relative;
+right:-10%;
+}
+
+.icono_menu:before {
+  left:-90%;
+
+}
+
+.myButton_buscar {
+   position: relative;
+   right:-10%;
+}
+
+
+#li_iniciar_sesion{ 
+      display: none;
+         }
+
+
+#li_carrito_compras{
+position: relative;
+right:10%;	
+}
+
+#li_usuario{
+position: relative;
+right:10%;
+}
+
+}
+
+@media screen and (max-width:500px) {
+
+
+.logo_agrosell{
+	width:60px;
+	position: relative;
+	left: -65%;
+
+}
+.caja_buscar{
+display: none;
+}
+
+.icono_menu:before {
+  left:-60%;
+
+}
+
+.myButton_buscar {
+  background: transparent;
+  position: relative;
+  right: -12%;
+}
+
+#li_carrito_compras{
+width: 6%;
+position: relative;
+right:15%;	
+}
+
+#li_usuario{
+width: 6%;
+position: relative;
+right:18%;
+}
+
+
+
+.myButton_buscar:hover {
+	color:#1FAB54;
+	background: transparent;
+}
+.myButton_buscar:active {
+	color:#249950;
+	background: transparent;
+}
+
+	}
+
+@media screen and (max-width:450px) {
+
+.myButton_buscar {
+
+  position: relative;
+  right:-8%;
+}
+
+
+@media screen and (max-width:400px) {
+
+.logo_agrosell{
+	
+	left: -55%;
+
+}
+.myButton_buscar {
+
+  position: relative;
+  right:3%;
+}
+
+}
+
+@media screen and (max-width:300px) {
+
+.logo_agrosell{
+	
+	left: -45%;
+
+}
+.myButton_buscar {
+
+  position: relative;
+  right:48%;
+}
+
+#li_carrito_compras{
+position: relative;
+right:20%;	
+}
+
+#li_usuario{
+position: relative;
+right:25%;
+}
+
+}
+
+
