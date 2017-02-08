@@ -922,6 +922,10 @@ right:-2%;
    width:8%;
 }
 
+#menu_categorias {
+	width:30%;
+	position:fixed;
+    left: -30%;
 
 }
 
@@ -959,6 +963,11 @@ right: -5%;
 .myButton_buscar {
    width:8%;
 }
+#menu_categorias {
+	width:40%;
+	position:fixed;
+    left: -40%;
+	}
 
 }
 
@@ -993,6 +1002,11 @@ right: -10%;
 
 }
 
+#menu_categorias {
+	width:45%;
+	position:fixed;
+    left: -45%;
+	}
  
 }
 
@@ -1036,6 +1050,12 @@ position: relative;
 right:10%;
 }
 
+#menu_categorias {
+	width:50%;
+	position:fixed;
+    left: -50%;
+	}
+ 
 }
 
 @media screen and (max-width:500px) {
@@ -1085,6 +1105,14 @@ right:18%;
 	background: transparent;
 }
 
+#menu_categorias {
+	width:70%;
+	position:fixed;
+    left: -70%;
+	}
+
+
+
 	}
 
 @media screen and (max-width:450px) {
@@ -1093,6 +1121,13 @@ right:18%;
 
   position: relative;
   right:-8%;
+}
+
+#menu_categorias {
+	width:75%;
+	position:fixed;
+    left: -75%;
+	}
 }
 
 
@@ -1108,6 +1143,12 @@ right:18%;
   position: relative;
   right:3%;
 }
+
+#menu_categorias {
+	width:80%;
+	position:fixed;
+    left: -80%;
+	}
 
 }
 
@@ -1133,6 +1174,13 @@ right:20%;
 position: relative;
 right:25%;
 }
+
+#menu_categorias {
+	width:90%;
+	position:fixed;
+    left: -90%;
+	}
+
 
 }
 
