@@ -6,6 +6,7 @@
          $('#tabla_crear_cuenta_comerciante').hide();
          $('#tabla_crear_cuenta_agricultor').hide();
          $('#tabla_crear_cuenta_comerciante').hide();
+         $('#boton_iniciar_sesion').css("background","#1FF538");
 
 		$("#boton_iniciar_sesion").on( "click", function() {
 			$('#tabla_iniciar_sesion').show(); //muestro mediante id
