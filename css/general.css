@@ -292,10 +292,12 @@ nav > ul li a{
 .myButtoni:hover {
 	background-color:#1FAB54;
 	color: #FFFFFF;
+	border:1px solid #1FAB54;
 }
 .myButtoni:active {
 	background-color:#249950;
 	color: #FFFFFF;
+	border:1px solid #1FAB54;
 }
 
 .myButton_buscar {

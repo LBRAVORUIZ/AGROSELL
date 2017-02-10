@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+ <title>Agrosell</title>
+	<link rel="stylesheet" type="text/css" href="../css/general.css">
+	<script src=": http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link rel="shortcut icon" sizes="100x100" href="../logo/logo_navegador.png">
+  <link rel="stylesheet" type="text/css" href="../iconos/menu_categorias/font/flaticon.css"> 
+  <link rel="stylesheet" type="text/css" href="../css/iniciar_sesion.css">
+  <script type="text/javascript" src="../script/iniciar_sesion_crear_cuenta.js"></script>
+</head>
+<body>
+	<header id="menu_superior">
+      <nav id="nav_menu_superior">
+      <ul>
+      <li>
+      </li>
+        <li id="li_logo">
+     <a href="index.html" id="logo_inicio"><img src="../logo/logo_agrosell.png" class="logo_agrosell"></a>
+        </li>
+  
+      </ul>
+    </nav>
+  </header>
+  <div id="div_contenido_iniciar_sesion">
+
+  <img id="iniciar_sesion_imagen"  src="../imagenes/iniciar_sesion.png">
+ <div id="div_iniciar_sesion">
+ <ul id="titulo_iniciar_registro">
+   <li id="boton_iniciar_sesion"><a>INICIAR SESIÓN</a></li>
+   <li id="boton_crear_cuenta"><a >CREAR CUENTA</a></li>
+ </ul>
+
+  <table id="tabla_iniciar_sesion">
+  <tbody>
+    <tr><td width="10%">Email</td></tr>
+    <tr>
+      <td width="80%"><input type="email" name="email" class="input_iniciar_sesion" id="email">
+      </td>
+    </tr>
+    <tr>
+      <td id="td_texto_contraseña">Contraseña</td>
+    </tr>
+    <tr><td>
+    <input type="password" name="password" class="input_iniciar_sesion" id="password">
+    </td></tr>
+    <tr>
+      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion">Iniciar Sesion</a></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br><a href="" class="olvidar_contraseña">Olvidé mi contraseña</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <table id="tabla_crear_cuenta">
+  <tbody>
+    <tr>
+      <td id="texto_comenzemos">Para comenzar indicanos, si eres..</td>
+    </tr>
+    <tr>
+      <td width="60%">
+      <br>
+      <br>
+      <br>
+      <div>
+      <a class="agricultor">Agricultor</a>
+      <a class="empresa">Comerciante</a>
+      </div>
+      </td>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+
+<table id="tabla_crear_cuenta_agricultor">
+  <tbody>
+  <tr><td width="10%">Nombres</td></tr>
+    <tr>
+      <td width="80%"><input type="text" name="nombre_agricultor" class="input_crear_cuenta" id="nombre_agricultor">
+      </td>
+    </tr>
+    <tr>
+      <td id="td_texto_contraseña">Apellidos</td>
+    </tr>
+    <tr><td>
+    <input type="text" name="apellidos_agricultor" class="input_crear_cuenta" id="apellidos_agricultor">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Email</td>
+    </tr>
+    <tr><td>
+    <input type="email" name="email" class="input_crear_cuenta" id="email_agricultor">
+    </td></tr>
+     <tr>
+      <td id="td_texto_contraseña">Contraseña</td>
+    </tr>
+    <tr><td>
+    <input type="password" name="password" class="input_crear_cuenta" id="password">
+    </td></tr>
+     <tr>
+      <td id="td_texto_contraseña">Repita su contraseña</td>
+    </tr>
+    <tr><td>
+    <input type="password" name="password" class="input_crear_cuenta" id="password">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">DNI o Carnét de Extranjeria</td>
+    </tr>
+    <tr><td>
+    <input type="number" name="dni_agricultor" class="input_crear_cuenta" id="dni_agricultor">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Numero de Contacto</td>
+    </tr>
+    <tr><td>
+    <input type="number" name="telefono_agricultor" class="input_crear_cuenta" id="telefono_agricultor">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Dirección</td>
+    </tr>
+    <tr><td>
+    <input type="text" name="direccion_agricultor" class="input_crear_cuenta" id="direccion_agricultor">
+    </td></tr>
+    <tr>
+      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion">Crear Cuenta</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="tabla_crear_cuenta_comerciante">
+  <tbody>
+  <tr><td width="10%">Razon Social</td></tr>
+    <tr>
+      <td width="80%"><input type="text" name="razon_social_comerciante" class="input_crear_cuenta" id="razon_social_comerciante">
+      </td>
+    </tr>
+    <tr>
+      <td id="td_texto_contraseña">Ruc</td>
+    </tr>
+    <tr><td>
+    <input type="number" name="ruc_comerciante" class="input_crear_cuenta" id="ruc_comerciante">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Email</td>
+    </tr>
+    <tr><td>
+    <input type="email" name="email" class="input_crear_cuenta" id="email_comerciante">
+    </td></tr>
+     <tr>
+      <td id="td_texto_contraseña">Contraseña</td>
+    </tr>
+    <tr><td>
+    <input type="password" name="password_comerciante" class="input_crear_cuenta" id="password_comerciante">
+    </td></tr>
+     <tr>
+      <td id="td_texto_contraseña">Repita su contraseña</td>
+    </tr>
+    <tr><td>
+    <input type="password" name="password" class="input_crear_cuenta" id="password">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Numero de Contacto</td>
+    </tr>
+    <tr><td>
+    <input type="number" name="telefono_comerciante" class="input_crear_cuenta" id="telefono_comerciante">
+    </td></tr>
+      <tr>
+      <td id="td_texto_contraseña">Dirección</td>
+    </tr>
+    <tr><td>
+    <input type="text" name="direccion_comerciante" class="input_crear_cuenta" id="direccion_comerciante">
+    </td></tr>
+    <tr>
+      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion">Crear Cuenta</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<footer class="clase-general">
+<div class="pie_pagina_suscribirse">¡SUSCRÍBETE A NUESTRO NEWSLETTER!
+<input class="pie_pagina_input_suscribirse" type="email" name="email" placeholder="Suscríbite con tu email">
+<a href="#" class="pie_pagina_boton_suscribirse">Suscribirse</a>
+</div>
+<div class="pie_pagina_forma_pago_div"><img class="pie_pagina_forma_pago_imagen_efectivo" src="../iconos/forma de pago/efectivo.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_visa" src="../iconos/forma de pago/visa.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_mastercard" src="../iconos/forma de pago/mastercard.png"></div>
+</footer>
+</body>
+</html>

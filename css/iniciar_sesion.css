@@ -1,0 +1,245 @@
+
+/*PAGINA INICIAR SESION*/
+
+html,
+body{
+
+	background: #FEFDFD;
+	
+	  
+}
+
+
+
+#div_iniciar_sesion{
+width:55%;
+height:1000px;
+display: inline-block;
+overflow:hidden;
+margin-top:1%;
+}
+
+
+
+#iniciar_sesion_imagen{
+ width:300px;
+ height: 500px;
+ margin-left: 10%;
+ display: inline-block;
+ position: relative;
+vertical-align: top;
+
+
+}
+
+#titulo_iniciar_registro{
+	display:block;
+	height:50px;
+	margin-top: 5%;
+
+}
+
+#titulo_iniciar_registro  li{
+	display: inline-block;
+	vertical-align: middle;
+	width: 32%;
+	height: 100%;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+    left:5%;
+	top: -20%;
+
+
+}
+
+#titulo_iniciar_registro  li a{
+	
+	text-decoration: none;
+	color: #2A2A2A;
+	position: relative;
+	top: 30%;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: arial;
+}
+
+
+#tabla_iniciar_sesion{
+	margin-left:20%;
+	font-size: 18px;
+	font-weight: normal;
+	
+}
+
+#td_texto_contraseña {
+	position: relative;
+	top:5px;
+}
+
+.boton_iniciar_sesion{
+background:#333634;
+-moz-border-radius:28px;
+-webkit-border-radius:28px;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#FFFFFF;
+font-family:Arial;
+font-size:17px;
+padding:8px 153px;
+text-decoration:none;
+text-shadow:0px 0.5px 0px #2f6627;
+}
+.boton_iniciar_sesion:hover {
+	background-color:#1FAB54;
+	color: #FFFFFF;
+}
+.boton_iniciar_sesion:active {
+	background-color:#249950;
+	color: #FFFFFF;
+}
+.input_iniciar_sesion{
+width: 400px;
+height:30px;
+border-top: none;
+border-right: none;
+border-left: none;
+padding-left:10px;
+background: transparent;
+
+}
+
+.input_iniciar_sesion:focus{
+	outline: 0px;
+border-bottom-color:#18C459; 
+}
+
+.olvidar_contraseña{
+	color:#1FAB54;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+
+}
+
+/*RESGITRO*/
+@font-face {
+  font-family: "iconos";
+  src: url("../iconos/menu_categorias/font/Flaticon.eot");
+  src: url("../iconos/menu_categorias/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../iconos/menu_categorias/font/Flaticon.woff") format("woff"),
+       url("../iconos/menu_categorias/font/Flaticon.ttf") format("truetype"),
+       url("../iconos/menu_categorias/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "iconos";
+    src: url("../iconos/menu_categorias/font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.agricultor:before { 
+   content: "\f1cd";
+   font-family: iconos;
+   font-size: 50px;
+   display: inline-block;
+   position: relative;
+   bottom:40px;
+   left: 60px;
+
+}
+
+
+
+ .empresa:before { 
+    content: "\f1aa";
+   font-family: iconos;
+   font-size: 50px;
+  display: inline-block;
+  position: relative;
+ bottom:40px;
+ left: 70px;
+
+}
+
+.agricultor{
+ color: #323232;
+ text-decoration: none;
+margin-left: 10%;
+
+}
+
+.empresa{
+ color: #323232;
+ text-decoration: none;
+
+}
+
+
+.agricultor:hover{
+ color: #1FAB54;
+}
+
+.empresa:hover{
+ color: #1FAB54;
+}
+
+#tabla_crear_cuenta{
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+
+	
+}
+
+#texto_comenzemos{
+	font-size: 20px;
+    color: #8D8B8B;
+    font-weight: bold;
+   position: relative;
+   left:50px;
+   }
+
+
+ #tabla_crear_cuenta_agricultor{
+	margin-left:17%;
+	font-size: 18px;
+	font-weight: normal;
+	
+}
+
+ #tabla_crear_cuenta_comerciante{
+	margin-left:17%;
+	font-size: 18px;
+	font-weight: normal;
+	
+}
+
+
+.input_crear_cuenta{
+width: 400px;
+height:30px;
+border-top: none;
+border-right: none;
+border-left: none;
+padding-left:10px;
+background: transparent;
+}
+
+
+.input_crear_cuenta:focus{
+	outline: 0px;
+border-bottom-color:#18C459; 
+}
+/*
+.input_crear_cuenta_js:valid{
+	border-bottom-color:#18C459;
+}
+*/
+.input_crear_cuenta:invalid{
+	border-bottom-color: #D20202;
+}
