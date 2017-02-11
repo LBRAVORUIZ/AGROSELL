@@ -9,6 +9,18 @@ body{
 	  
 }
 
+header {
+    overflow: hidden;
+    height: 65px;
+    margin-left:0px;
+	margin-top:0px;
+	left: 0; 
+	top: 0; 
+	width: 100%;
+	position:absolute;
+
+}
+
 
 
 #div_iniciar_sesion{
@@ -120,8 +132,10 @@ border-bottom-color:#18C459;
 	text-decoration: none;
 	font-size: 17px;
 	font-weight: bold;
+	cursor: pointer;
 
 }
+
 
 /*RESGITRO*/
 @font-face {
@@ -243,3 +257,6 @@ border-bottom-color:#18C459;
 .input_crear_cuenta:invalid{
 	border-bottom-color: #D20202;
 }
+
+
+

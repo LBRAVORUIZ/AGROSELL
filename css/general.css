@@ -392,6 +392,12 @@ border-top-left-radius: 3px;
 
 }
 
+.caja_buscar:focus{
+	outline: 0px;
+}
+
+
+
 /*DIV PARTE DE PRODUCTOS*/
 
 .div_categorias{
