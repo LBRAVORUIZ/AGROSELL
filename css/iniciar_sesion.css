@@ -258,5 +258,65 @@ border-bottom-color:#18C459;
 	border-bottom-color: #D20202;
 }
 
+/*PAGINA RECUPERAR_CONTRASEÑA*/
 
+#div_recuperar_contraseña{
+	margin-top: 1%;
+	height: 85%;
+}
 
+#div_recuperar_contraseña_contenido{
+	width: 32%;
+	height: 30%;
+	position: relative;
+	top: 20%;
+	left: 30%;
+	font-size: 16px;
+	color: #535252;
+	padding-left: 1%;
+	padding-right: 1%;
+
+}
+
+#titulo_recuperar_contraseña{
+	font-size: 20px;
+	color: #1B1A1A;
+}
+
+.boton_iniciar_sesion_recuperar{
+background:#333634;
+-moz-border-radius:28px;
+-webkit-border-radius:28px;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#FFFFFF;
+font-family:Arial;
+font-size:17px;
+padding:8px 123px;
+text-decoration:none;
+text-shadow:0px 0.5px 0px #2f6627;
+}
+.boton_iniciar_sesion_recuperar:hover {
+	background-color:#1FAB54;
+	color: #FFFFFF;
+}
+.boton_iniciar_sesion_recuperar:active {
+	background-color:#249950;
+	color: #FFFFFF;
+}
+#hr_recuperar{
+	width: 95%;
+	position:relative;
+	left: -3%;
+}
+#texto_email_recuperar_contraseña{
+	color: #000000;
+	font-size: 15px;
+	font-family: cursive;
+}
+#pie_pagina_recuperar{
+	font-size: 16px;
+	text-align: center;
+	color: #767171;
+}
