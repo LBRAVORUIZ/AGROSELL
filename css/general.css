@@ -410,6 +410,7 @@ border-top-left-radius: 3px;
 	margin-top: 3%;
 
 
+
 }
 .presentacion_productos{
 width: 202.5px;
@@ -476,13 +477,12 @@ height: 200px;
 }
 
 .parte_superior{
-height:40px;
+height:10%;
 margin-top: 15px;
 }
 
 .parte_inferior{
-height: 500px;
-
+height:80%;
 
 }
 /*PARTE SUPERIOR*/

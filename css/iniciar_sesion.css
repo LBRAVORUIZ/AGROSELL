@@ -89,7 +89,7 @@ vertical-align: top;
 	top:5px;
 }
 
-.boton_iniciar_sesion{
+.boton_iniciar_sesion_final{
 background:#333634;
 -moz-border-radius:28px;
 -webkit-border-radius:28px;
@@ -99,15 +99,15 @@ cursor:pointer;
 color:#FFFFFF;
 font-family:Arial;
 font-size:17px;
-padding:8px 153px;
+padding:8px 155px;
 text-decoration:none;
 text-shadow:0px 0.5px 0px #2f6627;
 }
-.boton_iniciar_sesion:hover {
+.boton_iniciar_sesion_final:hover {
 	background-color:#1FAB54;
 	color: #FFFFFF;
 }
-.boton_iniciar_sesion:active {
+.boton_iniciar_sesion_final:active {
 	background-color:#249950;
 	color: #FFFFFF;
 }
@@ -320,3 +320,183 @@ text-shadow:0px 0.5px 0px #2f6627;
 	text-align: center;
 	color: #767171;
 }
+
+@media screen and (max-width:900px) {
+	
+#div_iniciar_sesion{
+width:65%;
+height:100%;
+margin-top:10%;
+
+}
+
+
+
+#iniciar_sesion_imagen{
+ width:30%;
+ height: 500px;
+ margin-left: 0%;
+ margin-top: 5%;
+
+}
+}
+
+
+@media screen and (max-width:800px) {
+	
+#div_iniciar_sesion{
+width:75%;
+margin-top:10%;
+margin-left: -8%;
+margin-right: -10%;
+
+
+}
+
+}
+
+@media screen and (max-width:700px) {
+
+#iniciar_sesion_imagen{
+display: none;
+
+}
+#div_iniciar_sesion{
+width:100%;
+margin-left: 2%;
+}
+
+}
+
+@media screen and (max-width:600px) {
+
+#div_iniciar_sesion{
+margin-left: -8%;
+}
+}
+
+@media screen and (max-width:550px) {
+
+#div_iniciar_sesion{
+
+margin-left: 0%;
+}
+
+.boton_iniciar_sesion_final{
+padding:8px 105px;
+}
+.input_iniciar_sesion{
+width: 300px;
+height:30px;
+}
+.input_crear_cuenta{
+width: 300px;
+}
+
+#tabla_crear_cuenta{
+	margin-left: -13%;
+}
+
+#titulo_iniciar_registro  li{
+	
+	width: 40%;
+	position: relative;
+    left:0%;
+	
+
+
+}
+
+#titulo_iniciar_registro  li a{
+	
+	top: 30%;
+	font-size:14px;
+}
+
+}
+
+@media screen and (max-width:450px) {
+
+#div_iniciar_sesion{
+
+margin-left: -5%;
+margin-top: 15%;
+
+}
+
+.boton_iniciar_sesion_final{
+padding:8px 85px;
+}
+.input_iniciar_sesion{
+width: 250px;
+}
+.input_crear_cuenta{
+width: 250px;
+}
+
+#tabla_crear_cuenta{
+	margin-left: -20%;
+
+}
+
+#titulo_iniciar_registro  li{
+	
+	width: 42%;
+	position: relative;
+    left:0%;
+
+}
+#texto_comenzemos{
+	font-size: 15px;
+}
+
+}
+
+@media screen and (max-width:350px) {
+
+#div_iniciar_sesion{
+
+margin-left: -5%;
+margin-top: 18%;
+
+}
+
+.boton_iniciar_sesion_final{
+padding:8px 58px;
+}
+.input_iniciar_sesion{
+width: 200px;
+}
+.input_crear_cuenta{
+width: 200px;
+}
+
+#tabla_crear_cuenta{
+	margin-left: -20%;
+
+}
+#titulo_iniciar_registro  li a{
+	
+	top: 30%;
+	font-size:12px;
+}
+
+#tabla_iniciar_sesion{
+font-size: 16px;	
+}
+.olvidar_contraseña{
+	font-size: 14px;
+}
+#tabla_crear_cuenta{
+	font-size: 16px;
+}
+
+#tabla_crear_cuenta_agricultor{
+	font-size: 16px;
+}
+
+#tabla_crear_cuenta_comerciante{
+	font-size: 16px;
+}
+}
+
