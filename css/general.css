@@ -120,18 +120,20 @@ nav > ul li a{
 }
 
 .usuario:before { 
-   content: "\f1df";
+    content: "\f1ef";
    font-family: iconos;
    font-size: 30px;
    vertical-align: middle;
    position: relative;
    top: -4px;
+   cursor: pointer;
+ 
 
 
 }
 
 .carrito-compras:before{
-    content: "\f12f";
+   content: "\f133";
    font-family: iconos;
    font-size: 30px;
    vertical-align: middle;
@@ -142,7 +144,7 @@ nav > ul li a{
 
  .icono_buscar:before{
  	font-family: iconos;
-	content: "\f11d";
+	content: "\f120";
 	vertical-align: middle;
 	font-size: 150%;
 	position: relative;
@@ -151,7 +153,7 @@ nav > ul li a{
 	}
  
  .icono_menu:before {
-  content: "\f117"; 
+  content: "\f11a";
   font-family: iconos;
   font-size:140%;
   vertical-align: middle;
@@ -168,7 +170,7 @@ nav > ul li a{
 	height:100%;
     margin-top: 60px;
    position:fixed;
-   left: -25%;
+   left:0%;
 
 
 
@@ -239,9 +241,55 @@ nav > ul li a{
 	}
 
 
+   /*MENU USUARIO*/
+
+#menu_usuario {
+	width:20%;
+	height:31%;
+    margin-top:60px;
+    margin-left: 72%;
    
+}
+ 
+#menu_usuario nav {
+	width:100%;
+	height:100%;
+	max-width:1000px;
+	margin:25px auto;
+   background:#333634;
 
 
+	
+	
+}
+ 
+ 
+#menu_usuario nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+#menu_usuario nav ul li {
+	float:none;
+	display: block;
+	margin-left: -25px;
+}
+#menu_usuario nav ul li a {
+	color:#fff;
+	padding:12px;
+	display:block;
+	text-decoration:none;
+	text-align: left;
+}
+ 
+#menu_usuario nav ul li span {
+	margin-right:10px;
+	margin-left: -25px;
+}
+ 
+#menu_usuario nav ul li a:hover {
+	background-color:#18C459;
+}
 /*BOTONES*/
 
 
@@ -892,6 +940,7 @@ border: 1px solid red;
 */
  
 
+
 @media screen and (max-width:1100px) {
 
 
@@ -930,8 +979,6 @@ right:-2%;
 
 #menu_categorias {
 	width:30%;
-	position:fixed;
-    left: -30%;
 
 }
 .div_categorias{
@@ -940,6 +987,11 @@ margin-top:5%;
 .pie_pagina_suscribirse{
 font-size: 15px;
 font-weight: bold;
+}
+#menu_usuario {
+    height: 33%;
+    width: 25%;
+   
 }
 
 }
@@ -981,8 +1033,6 @@ right: -5%;
 }
 #menu_categorias {
 	width:40%;
-	position:fixed;
-    left: -40%;
 	}
 .div_categorias{
 margin-top:8%;
@@ -994,6 +1044,12 @@ margin-top:2%;
 
 .pie_pagina_input_suscribirse{
 width:60%;
+}
+
+#menu_usuario {
+margin-left: 60%;
+width: 40%;
+   
 }
 
 }
@@ -1031,8 +1087,6 @@ right: -10%;
 
 #menu_categorias {
 	width:45%;
-	position:fixed;
-    left: -45%;
 	}
 
 .div_categorias{
@@ -1084,8 +1138,6 @@ right:10%;
 
 #menu_categorias {
 	width:50%;
-	position:fixed;
-    left: -50%;
 	}
 .div_categorias{
 margin-top:10%;
@@ -1093,6 +1145,11 @@ margin-top:10%;
 
 .pie_pagina_input_suscribirse{
 width:55%;
+}
+#menu_usuario {
+    margin-left:50%;
+    width: 50%;
+   
 }
 
 }
@@ -1146,8 +1203,6 @@ right:18%;
 
 #menu_categorias {
 	width:70%;
-	position:fixed;
-    left: -70%;
 	}
 
 .div_categorias{
@@ -1170,11 +1225,13 @@ width:50%;
 
 #menu_categorias {
 	width:75%;
-	position:fixed;
-    left: -75%;
 	}
 
-
+#menu_usuario {
+    margin-left:40%;
+    width: 60%;
+   
+}
 
 }
 
@@ -1194,8 +1251,6 @@ width:50%;
 
 #menu_categorias {
 	width:80%;
-	position:fixed;
-    left: -80%;
 	}
 
 
@@ -1204,6 +1259,11 @@ width:50%;
 margin-left: -1%;
 }
 
+#menu_usuario {
+    margin-left:30%;
+    width: 70%;
+   
+}
 }
 
 
@@ -1232,8 +1292,6 @@ right:25%;
 
 #menu_categorias {
 	width:90%;
-	position:fixed;
-    left: -90%;
 	}
 
 .div_categorias{

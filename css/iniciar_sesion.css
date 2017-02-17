@@ -157,7 +157,7 @@ border-bottom-color:#18C459;
 }
 
 .agricultor:before { 
-   content: "\f1cd";
+  content: "\f1c2";
    font-family: iconos;
    font-size: 50px;
    display: inline-block;
@@ -170,7 +170,7 @@ border-bottom-color:#18C459;
 
 
  .empresa:before { 
-    content: "\f1aa";
+  content: "\f1b6";
    font-family: iconos;
    font-size: 50px;
   display: inline-block;
