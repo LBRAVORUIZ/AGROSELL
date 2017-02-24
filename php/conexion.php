@@ -10,15 +10,15 @@ $connectionInfo = array( "Database"=>"	u807939866_ags", "UID"=>"u807939866_bravo
 $conexion = mysql_connect( $serverName, $connectionInfo);
 
 if( $conexion ) {
-     /*echo "Conexión establecida.<br />";*/
+     echo "Conexión establecida.<br />";
 }else{
      echo "Conexión no se pudo establecer.<br />";
      die( print_r( mysql_errors(), true));
 }
 
 return $conexion;
-echo "conecion  establecida";
 }
+
 
 /*
 
