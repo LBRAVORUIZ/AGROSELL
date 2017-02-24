@@ -1,60 +1,20 @@
+
+
 <?php
+$enlace = mysqli_connect("31.170.164.34", "u807939866_bravo", "agrosell2017", "u807939866_ags");
 
-$conexion=null;
-function conexion ()
-{
-global $conexion;
-
-$serverName = "server25.hostinger.es"; //serverName\instanceName
-$connectionInfo = array( "Database"=>"	u807939866_ags", "UID"=>"u807939866_bravo", "PWD"=>"agrosell2017");
-$conexion = mysql_connect( $serverName, $connectionInfo);
-
-if( $conexion ) {
-     echo "Conexión establecida.<br />";
-}else{
-     echo "Conexión no se pudo establecer.<br />";
-     die( print_r( mysql_errors(), true));
+if (!$enlace) {
+    echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
+    echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
+    echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
+    exit;
 }
 
-return $conexion;
-}
+echo "Éxito: Se realizó una conexión apropiada a MySQL! La base de datos mi_bd es genial." . PHP_EOL;
+echo "Información del host: " . mysqli_get_host_info($enlace) . PHP_EOL;
 
-
-/*
-
-function validarlogin ($idusuario,$contraseña)
-{
-	global $conexion;
-
-
-	$consulta="SELECT * FROM USUARIOS  WHERE  usuario_nvar='$idusuario' AND clave_nvar='$contraseña'";
-	$respuesta=mysql_query($conexion,$consulta);
-	if($fila=mysql_fetch_array($respuesta))
-	{   
-		session_start();
-		$_sesion['usuario_nvar']=$idusuario;
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-function desconectar()
-{
-	global $conexion;
-}
-
-
-
-function hainiciarsesion()
-{   
-	session_start();
-	return true;
-}
-
-*/
-
-
-
+mysqli_close($enlace);
 ?>
+
+
+
