@@ -17,6 +17,7 @@ if( $conexion ) {
 }
 
 return $conexion;
+echo "conecion  establecida";
 }
 
 /*
