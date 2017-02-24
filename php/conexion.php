@@ -1,7 +1,6 @@
 
-
 <?php
-$enlace = mysqli_connect("31.170.164.34", "u807939866_bravo", "agrosell2017", "u807939866_ags");
+$enlace = mysqli_connect("mysql.hostinger.es", "u807939866_bravo", "agrosell2017", "u807939866_ags");
 
 if (!$enlace) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
