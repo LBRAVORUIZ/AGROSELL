@@ -11,6 +11,24 @@
   <link rel="stylesheet" type="text/css" href="../iconos/menu_categorias/font/flaticon.css"> 
   <link rel="stylesheet" type="text/css" href="../css/iniciar_sesion.css">
   <script type="text/javascript" src="../script/iniciar_sesion_crear_cuenta.js"></script>
+  <script>
+              
+              function registrar_usuario_agricultor()
+              {
+                document.frm_crear_cuenta_agriculor.submit()
+              }
+
+              function registrar_usuario_comerciante()
+              {
+                document.frm_crear_cuenta_comerciante.submit()
+              }
+               function iniciar_sesion()
+              {
+                document.frm_iniciar_sesion.submit()
+              }
+
+
+  </script>
 </head>
 <body>
 	<header id="menu_superior_iniciar_sesion">
@@ -36,6 +54,7 @@
 
   <table id="tabla_iniciar_sesion">
   <tbody>
+  <form id="frm_iniciar_sesion" name="frm_iniciar_sesion" method="POST" action="../php/iniciar_sesion.php">
     <tr><td width="10%">Email</td></tr>
     <tr>
       <td width="80%"><input type="email" name="email" class="input_iniciar_sesion" id="email">
@@ -47,8 +66,9 @@
     <tr><td>
     <input type="password" name="password" class="input_iniciar_sesion" id="password">
     </td></tr>
+    </form>
     <tr>
-      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion_final">Iniciar Sesion</a></td>
+      <td colspan="2"><br><a onclick="iniciar_sesion()" class="boton_iniciar_sesion_final">Iniciar Sesion</a></td>
     </tr>
     <tr>
       <td colspan="2"><br><a href="recuperar_contrasena.html" id="boton_recuperar_contraseña" class="olvidar_contraseña">Olvidé mi contraseña</a></td>
@@ -80,9 +100,11 @@
 
 <table id="tabla_crear_cuenta_agricultor">
   <tbody>
+  <form id="frm_crear_cuenta_agriculor" name="frm_crear_cuenta_agriculor" method="POST" action="../php/registrar_usuario.php">
   <tr><td width="10%">Nombres</td></tr>
     <tr>
       <td width="80%"><input type="text" name="nombre_agricultor" class="input_crear_cuenta" id="nombre_agricultor">
+      <input type="hidden" name="codigo" value="0">
       </td>
     </tr>
     <tr>
@@ -101,7 +123,7 @@
       <td id="td_texto_contraseña">Contraseña</td>
     </tr>
     <tr><td>
-    <input type="password" name="password" class="input_crear_cuenta" id="password">
+    <input type="password" name="password_agricultor" class="input_crear_cuenta" id="password">
     </td></tr>
      <tr>
       <td id="td_texto_contraseña">Repita su contraseña</td>
@@ -127,17 +149,21 @@
     <tr><td>
     <input type="text" name="direccion_agricultor" class="input_crear_cuenta" id="direccion_agricultor">
     </td></tr>
+     </form>
     <tr>
-      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion_final">Crear Cuenta</a></td>
+      <td colspan="2"><br><a onclick="registrar_usuario_agricultor()" class="boton_iniciar_sesion_final">Crear Cuenta</a></td>
     </tr>
+   
   </tbody>
 </table>
 
 <table id="tabla_crear_cuenta_comerciante">
   <tbody>
+  <form id="frm_crear_cuenta_comerciante" name="frm_crear_cuenta_comerciante" method="POST" action="../php/registrar_usuario.php">
   <tr><td width="10%">Razon Social</td></tr>
     <tr>
       <td width="80%"><input type="text" name="razon_social_comerciante" class="input_crear_cuenta" id="razon_social_comerciante">
+                      <input type="hidden" name="codigo" value="1">
       </td>
     </tr>
     <tr>
@@ -176,8 +202,9 @@
     <tr><td>
     <input type="text" name="direccion_comerciante" class="input_crear_cuenta" id="direccion_comerciante">
     </td></tr>
+    </form>
     <tr>
-      <td colspan="2"><br><a href="#" class="boton_iniciar_sesion_final">Crear Cuenta</a></td>
+      <td colspan="2"><br><a onclick="registrar_usuario_comerciante()" class="boton_iniciar_sesion_final">Crear Cuenta</a></td>
     </tr>
   </tbody>
 </table>
