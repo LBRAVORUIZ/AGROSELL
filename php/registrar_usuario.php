@@ -21,7 +21,7 @@ echo $direccion;
 
 */
 conexion();
-$query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
+$query1 = "INSERT INTO usuario VALUES(2,".$email."',".$clave.")";
 $query2 = "INSERT INTO agricultor VALUES(NULL,".$nombre."',".$apellido.",".$dni.",".$telefono.",".$direccion.")";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
