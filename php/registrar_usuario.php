@@ -13,11 +13,13 @@ $telefono=$_POST['telefono_agricultor'];
 $direccion=$_POST['direccion_agricultor'];
 echo $nombre;
 
+/*
 $query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
 $query2 = "INSERT INTO agricultor VALUES(NULL,".$nombre."',".$apellido.",".$dni.",".$telefono.",".$direccion.")";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
+*/
 }
 else{
 $razon_social=$_POST['razon_social_comerciante'];
@@ -34,11 +36,13 @@ echo $clave;
 echo $telefono;
 echo $direccion;
 */
+/*
 $query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
 $query2 = "INSERT INTO comerciante VALUES(NULL,".$razon_social."',".$ruc.",".$telefono.",".$direccion.")";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
+*/
 
 }
 
