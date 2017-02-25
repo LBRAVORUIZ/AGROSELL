@@ -11,6 +11,7 @@ $clave=$_POST['password_agricultor'];
 $dni=$_POST['dni_agricultor'];
 $telefono=$_POST['telefono_agricultor'];
 $direccion=$_POST['direccion_agricultor'];
+echo $nombre;
 
 $query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
 $query2 = "INSERT INTO agricultor VALUES(NULL,".$nombre."',".$apellido.",".$dni.",".$telefono.",".$direccion.")";
