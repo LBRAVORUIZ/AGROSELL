@@ -1,5 +1,5 @@
 <?php 
-
+require 'conexion.php';
 $codigo=$_POST['codigo'];
 
 if ($codigo==0) {
@@ -10,7 +10,7 @@ $clave=$_POST['password_agricultor'];
 $dni=$_POST['dni_agricultor'];
 $telefono=$_POST['telefono_agricultor'];
 $direccion=$_POST['direccion_agricultor'];
-$conexion = mysqli_connect("mysql.hostinger.es", "u807939866_bravo", "agrosell2017", "u807939866_ags");
+conexion();
 $query1 = "INSERT INTO usuario VALUES(NULL,'".$email."','".$clave."')";
 $query2 = "INSERT INTO agricultor VALUES(NULL,'".$nombre."','".$apellido."','".$dni."','".$telefono."','".$direccion."')";
 mysqli_query($conexion, $query1);
@@ -33,7 +33,7 @@ echo $clave;
 echo $telefono;
 echo $direccion;
 */
-$conexion = mysqli_connect("mysql.hostinger.es", "u807939866_bravo", "agrosell2017", "u807939866_ags");
+conexion();
 $query1 = "INSERT INTO usuario VALUES(NULL,'".$email."','".$clave."')";
 $query2 = "INSERT INTO comerciante VALUES(NULL,'".$razon_social."','".$ruc."','".$telefono."','".$direccion."')";
 mysqli_query($conexion, $query1);
