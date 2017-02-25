@@ -21,8 +21,8 @@ echo $direccion;
 
 */
 conexion();
-$query1 = "INSERT INTO usuario VALUES(".$email."',".$clave.")";
-$query2 = "INSERT INTO agricultor VALUES(".$nombre."',".$apellido.",".$dni.",".$telefono.",".$direccion.")";
+$query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
+$query2 = "INSERT INTO agricultor VALUES(NULL,".$nombre."',".$apellido.",".$dni.",".$telefono.",".$direccion.")";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
@@ -43,8 +43,8 @@ echo $telefono;
 echo $direccion;
 */
 conexion();
-$query1 = "INSERT INTO usuario VALUES(".$email."',".$clave.")";
-$query2 = "INSERT INTO comerciante VALUES(".$razon_social."',".$ruc.",".$telefono.",".$direccion.")";
+$query1 = "INSERT INTO usuario VALUES(NULL,".$email."',".$clave.")";
+$query2 = "INSERT INTO comerciante VALUES(NULL,".$razon_social."',".$ruc.",".$telefono.",".$direccion.")";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
