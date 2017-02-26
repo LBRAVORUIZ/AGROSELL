@@ -25,17 +25,10 @@ $email=$_POST['email'];
 $clave=$_POST['password_comerciante'];
 $telefono=$_POST['telefono_comerciante'];
 $direccion=$_POST['direccion_comerciante'];
-/*
-echo $razon_social;
-echo $ruc;
-echo $email;
-echo $clave;
-echo $telefono;
-echo $direccion;
-*/
+
 conexion();
 $query1 = "INSERT INTO usuario VALUES(NULL,'".$email."','".$clave."')";
-$query2 = "INSERT INTO comerciante VALUES(NULL,'".$razon_social."','".$ruc."','".$telefono."','".$direccion."')";
+$query2 = "INSERT INTO empresa VALUES(NULL,'".$razon_social."','".$ruc."','".$telefono."','".$direccion."')";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);

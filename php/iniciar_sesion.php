@@ -3,14 +3,12 @@ require 'conexion.php';
 
 $email=$_POST['email'];
 $password=$_POST['password'];
-echo $email;
-echo $password;
 
 
 conexion();
-if(validarLogin($idusuario,$contraseña)){
+if(validarLogin($email,$password)){
 
-header('location:principal.php');
+header('../index.html');
 
 }
 
@@ -21,7 +19,7 @@ else{
 	
 alert('Los datos ingresados son incorrectos')
 
-location.href="INTRANET.html"
+location.href="../html/iniciar_sesion.html"
 
 </script>
 

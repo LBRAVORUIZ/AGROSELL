@@ -19,6 +19,25 @@ echo "Información del host: " . mysqli_get_host_info($conexion) . PHP_EOL;
 */
 return $conexion;
 }
+
+function validarlogin ($email,$contraseña)
+{
+	global $conexion;
+
+
+	$consulta="SELECT * FROM usuario  WHERE  email_usuario='$email' AND clave_usuario='$password'";
+	$respuesta=mysqli_query($conexion,$consulta);
+	if($fila=mysqli_fetch_array($respuesta))
+	{   
+		session_start();
+		$_sesion['email_usuario']=$email;
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 ?>
 
 
