@@ -13,7 +13,7 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 
     while ($row = mysqli_fetch_array($resultado, MYSQLI_NUM)) {
        
-        echo $row[0]+$row[1]+$row[3];
+        printf ("%s %s (%s)\n", $row[0], $row[1],$row[3]);
     }
 
     /* liberar el conjunto de resultados */
