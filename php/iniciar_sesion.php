@@ -3,8 +3,6 @@ require 'conexion.php';
 
 $email=$_POST['email'];
 $password=$_POST['password'];
-echo $email;
-echo $password;
 
 conexion();
 $consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
@@ -13,7 +11,7 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 
     /* obtener el array asociativo */
     while ($fila = mysqli_fetch_row($resultado)) {
-        printf ("%s (%s)\n", $fila[0], $fila[1],$fila[2]);
+        printf ( $fila[0], $fila[1],$fila[2]);
     }
 
     /* liberar el conjunto de resultados */
