@@ -5,7 +5,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 conexion();
-$consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
+$consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' AND clave='".$password."' ";
 
 if ($resultado = mysqli_query($conexion, $consulta)) {
 
@@ -13,7 +13,7 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 
     while ($row = mysqli_fetch_array($resultado, MYSQLI_NUM)) {
        
-        printf ("%s (%s)\n", $row[0], $row[1]);
+        printf ("%s (%s)\n", $row[0], $row[1],$row[3]);
     }
 
     /* liberar el conjunto de resultados */
