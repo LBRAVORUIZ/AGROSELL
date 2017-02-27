@@ -3,6 +3,9 @@ require 'conexion.php';
 
 $email=$_POST['email'];
 $password=$_POST['password'];
+echo $email;
+echo $password;
+/*
 conexion();
 $consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' AND clave_usuario='".$password."'";
 $respuesta=mysqli_query($conexion,$consulta);
@@ -27,6 +30,6 @@ location.href="../html/iniciar_sesion.html"
 <?php
 	}
 
-
+*/
 
  ?>
