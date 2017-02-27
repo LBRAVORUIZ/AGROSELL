@@ -5,7 +5,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 conexion();
-$consulta= "SELECT * FROM usuario  WHERE  email_usuario='".$email."' AND clave_usuario='".$clave."' ";
+$consulta= "SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
 
 if ($resultado = mysqli_query($conexion, $consulta)) {
 
