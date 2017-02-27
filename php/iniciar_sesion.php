@@ -13,7 +13,7 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 
     /* obtener el array asociativo */
     while ($fila = mysqli_fetch_row($resultado)) {
-        printf ("%s (%s)\n", $fila[0], $fila[1]);
+        printf ("%s (%s)\n", $fila[0], $fila[1],$fila[2]);
     }
 
     /* liberar el conjunto de resultados */
