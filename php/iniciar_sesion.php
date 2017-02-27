@@ -5,9 +5,22 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 echo $email;
 echo $password;
-/*
+
 conexion();
-$consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' AND clave_usuario='".$password."'";
+$consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
+
+if ($resultado = mysqli_query($conexion, $consulta)) {
+
+    /* obtener el array asociativo */
+    while ($fila = mysqli_fetch_row($resultado)) {
+        echo ("%s (%s)\n", $fila[0], $fila[1]);
+    }
+
+    /* liberar el conjunto de resultados */
+    mysqli_free_result($resultado);
+}
+mysqli_close($conexion);
+/*
 $respuesta=mysqli_query($conexion,$consulta);
 if($fila=mysqli_fetch_array($respuesta))
 	{   
