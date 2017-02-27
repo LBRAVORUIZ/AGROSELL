@@ -20,7 +20,7 @@ echo "Información del host: " . mysqli_get_host_info($conexion) . PHP_EOL;
 return $conexion;
 }
 
-function validarlogin ($email,$contraseña)
+function validarlogin ($email,$password)
 {
 	global $conexion;
 
