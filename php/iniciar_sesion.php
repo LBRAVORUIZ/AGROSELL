@@ -10,8 +10,9 @@ $consulta="SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
 if ($resultado = mysqli_query($conexion, $consulta)) {
 
     /* obtener el array asociativo */
-    while ($fila = mysqli_fetch_array($resultado,SQLSRV_FETCH_ASSOC)) {
-        echo($fila['email_usuario'],$fila['clave_usuario']);
+    
+    while ($fila = mysqli_fetch_row($resultado)) {
+        printf ( $fila[0], $fila[1],$fila[2]);
     }
 
     /* liberar el conjunto de resultados */
