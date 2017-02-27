@@ -11,7 +11,7 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 
     /* obtener el array asociativo */
     while ($fila = mysqli_fetch_array($resultado,SQLSRV_FETCH_ASSOC)) {
-        printf ( $fila[0], $fila[1],$fila[2]);
+        echo($fila['email_usuario'],$fila['clave_usuario']);
     }
 
     /* liberar el conjunto de resultados */
