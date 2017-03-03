@@ -377,6 +377,7 @@ nav > ul li a{
 	width:80px;
 	position: relative;
 	left: -45%;
+	vertical-align: middle;
 
 }
 
