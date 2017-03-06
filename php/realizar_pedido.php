@@ -12,5 +12,5 @@ conexion();
 $query = "INSERT INTO pedido VALUES(NULL,'".$producto."','".$cantidad."','".$calidad."','".$precio."','".$descripcion."','".$direccion."','".$imagen."')";
 $mysqli=$conexion->query($query);
  
-$mysqli-> close(); 
+$mysqli-> close($conexion); 
  ?>
