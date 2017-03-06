@@ -9,7 +9,8 @@ $descripcion=$_POST['descripcion'];
 $direccion=$_POST['direccion'];
 $imagen=addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
 conexion();
-$query = "INSERT INTO pedido VALUES(NULL,'".$producto"','".$cantidad."','".$calidad"','".$precio"','".$descripcion"','".$direccion"','".$imagen"')";
+$query = "INSERT INTO pedido VALUES(NULL,'".$producto."','".$cantidad."','".$calidad."','".$precio."','".$descripcion."','".$direccion."','".$imagen."')";
 $mysqli=$conexion->query($query);
-
+ 
+$mysqli-> close(); 
  ?>
