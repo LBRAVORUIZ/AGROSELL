@@ -2,12 +2,12 @@
 
 require 'conexion.php';
 session_start();
-/*
-if (empty($_SESION['id_usuario'])) {
+
+if (empty($_SESSION['id_usuario'])) {
 	header("location:../html/iniciar_sesion.html");
 }
 else{
-	*/
+	
 $usuario=$_SESSION['id_usuario'];
 $producto=$_POST['producto'];
 $cantidad=$_POST['cantidad'];
@@ -22,7 +22,6 @@ $query = "INSERT INTO pedido VALUES(NULL,'".$usuario."','".$producto."','".$cant
 $mysqli=$conexion->query($query);
  
 $conexion->close();
-
 header("location:../html/mispedidos.html");
-
+}
  ?>
