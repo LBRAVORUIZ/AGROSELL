@@ -2,10 +2,12 @@
 
 require 'conexion.php';
 session_start();
+/*
 if (empty($_SESION['id_usuario'])) {
 	header("location:../html/iniciar_sesion.html");
 }
 else{
+	*/
 $usuario=$_SESION['id_usuario'];
 $producto=$_POST['producto'];
 $cantidad=$_POST['cantidad'];
@@ -22,5 +24,5 @@ $mysqli=$conexion->query($query);
 $conexion->close();
 
 header("location:../html/mispedidos.html");
-}
+
  ?>
