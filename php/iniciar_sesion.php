@@ -5,7 +5,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 session_start();
-$query= "SELECT * FROM usuario  WHERE  email_usuario='$email' a AND clave_usuario='$password'";
+$query= "SELECT * FROM usuario  WHERE  email_usuario='$email'  AND clave_usuario='$password'";
 
 conexion();
  $mysqli=$conexion->query($query);
