@@ -16,6 +16,7 @@ $query2 = "INSERT INTO agricultor VALUES(NULL,'".$email."','".$nombre."','".$ape
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
+header("location:../html/iniciar_sesion.html");
 
 }
 else{
@@ -32,6 +33,7 @@ $query2 = "INSERT INTO empresa VALUES(NULL,'".$email."','".$razon_social."','".$
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
+header("location:../html/iniciar_sesion.html");
 
 }
 
