@@ -14,12 +14,10 @@ conexion();
  	header("location:../html/iniciar_sesion.html");
  }
 else{
-	$_SESION['id_usuario']=$fila[0];
-	$_SESION['email_usuario']=$fila[1]
-	echo $_SESION['id_usuario'] ;
-	/*
+	$_SESSION['id_usuario']=$fila[0];
+	$_SESSION['email_usuario']=$fila[1]
 	header("location:../index.html");
-*/
+
 }
  $conexion->close();
  ?>

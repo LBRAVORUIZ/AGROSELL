@@ -8,7 +8,7 @@ if (empty($_SESION['id_usuario'])) {
 }
 else{
 	*/
-$usuario=$_SESION['id_usuario'];
+$usuario=$_SESSION['id_usuario'];
 $producto=$_POST['producto'];
 $cantidad=$_POST['cantidad'];
 $calidad=$_POST['calidad'];
