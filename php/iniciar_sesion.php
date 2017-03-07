@@ -15,8 +15,11 @@ conexion();
  }
 else{
 	$_SESION['id_usuario']=$fila[0];
-	$_SESION['email_usuario']=$fila[1];
+	$_SESION['email_usuario']=$fila[1]
+	echo $_SESION['id_usuario'] ;
+	/*
 	header("location:../index.html");
+*/
 }
  $conexion->close();
  ?>
