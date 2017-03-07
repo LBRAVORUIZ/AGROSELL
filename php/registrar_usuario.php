@@ -12,7 +12,7 @@ $telefono=$_POST['telefono_agricultor'];
 $direccion=$_POST['direccion_agricultor'];
 conexion();
 $query1 = "INSERT INTO usuario VALUES(NULL,'".$email."','".$clave."')";
-$query2 = "INSERT INTO agricultor VALUES(NULL,'".$nombre."','".$apellido."','".$dni."','".$telefono."','".$direccion."')";
+$query2 = "INSERT INTO agricultor VALUES(NULL,'".$email."','".$nombre."','".$apellido."','".$dni."','".$telefono."','".$direccion."')";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
@@ -28,7 +28,7 @@ $direccion=$_POST['direccion_comerciante'];
 
 conexion();
 $query1 = "INSERT INTO usuario VALUES(NULL,'".$email."','".$clave."')";
-$query2 = "INSERT INTO empresa VALUES(NULL,'".$razon_social."','".$ruc."','".$telefono."','".$direccion."')";
+$query2 = "INSERT INTO empresa VALUES(NULL,'".$email."','".$razon_social."','".$ruc."','".$telefono."','".$direccion."')";
 mysqli_query($conexion, $query1);
 mysqli_query($conexion, $query2);
 mysqli_close($conexion);
