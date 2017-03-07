@@ -2,7 +2,7 @@
 
 require 'conexion.php';
 session_start();
-if (empty($_SESION)) {
+if (empty($_SESION['id_usuario'])) {
 	header("location:../html/iniciar_sesion.html");
 }
 else{
