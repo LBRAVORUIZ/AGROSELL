@@ -4,45 +4,19 @@ require 'conexion.php';
 $email=$_POST['email'];
 $password=$_POST['password'];
 
+session_start();
+$query= "SELECT * FROM usuario  WHERE  email_usuario='$email' a AND clave_usuario='$password'";
+
 conexion();
-$consulta= "SELECT * FROM usuario  WHERE  email_usuario='".$email."' ";
-
-if ($resultado = mysqli_query($conexion, $consulta)) {
-
-    /* obtener el array asociativo */
-
-    while ($row = mysqli_fetch_array($resultado, MYSQLI_NUM)) {
-       
-        printf ("%s %s (%s)\n", $row[0], $row[1],$row[2]);
-    }
-
-    /* liberar el conjunto de resultados */
-    mysqli_free_result($resultado);
+ $mysqli=$conexion->query($query);
+ $fila=$mysqli->fetch_array(MYSQLI_NUM)
+ if(!$fila['id_usuario']){
+ 	header("location:../html/iniciar_sesion.html");
+ }
+else{
+	$_SESION['id_usuario']=$fila[0];
+	$_SESION['email_usuario']=$fila[1];
+	header("location:../index.html");
 }
-mysqli_close($conexion);
-/*
-$respuesta=mysqli_query($conexion,$consulta);
-if($fila=mysqli_fetch_array($respuesta))
-	{   
-		session_start();
-		$_sesion['email_usuario']=$email;
-		header('../index.html');
-
-	}
-	else
-	{
-		?>
-<script type="text/javascript">
-	
-alert('Los datos ingresados son incorrectos')
-
-location.href="../html/iniciar_sesion.html"
-
-</script>
-
-<?php
-	}
-
-*/
-
+ $conexion->close();
  ?>
