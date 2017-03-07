@@ -22,6 +22,6 @@ $query = "INSERT INTO pedido VALUES(NULL,'".$usuario."','".$producto."','".$cant
 $mysqli=$conexion->query($query);
  
 $conexion->close();
-header("location:../html/mispedidos.html");
+header("location:../php/mispedidos.php");
 }
  ?>
