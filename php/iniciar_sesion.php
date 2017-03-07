@@ -10,7 +10,7 @@ $query= "SELECT * FROM usuario  WHERE  email_usuario='$email' a AND clave_usuari
 conexion();
  $mysqli=$conexion->query($query);
  $fila=$mysqli->fetch_array(MYSQLI_NUM)
- if(!$fila['id_usuario']){
+ if(empty($fila['id_usuario'])){
  	header("location:../html/iniciar_sesion.html");
  }
 else{
