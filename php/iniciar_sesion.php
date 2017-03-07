@@ -5,12 +5,12 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 session_start();
-$query= "SELECT * FROM usuario  WHERE  email_usuario=".$email."' ";
+$query= "SELECT * FROM usuario  WHERE  email_usuario='$email' AND clave_usuario='$password'";
 
 conexion();
  $mysqli=$conexion->query($query);
  $fila=$mysqli->fetch_array(MYSQLI_NUM);
- if(empty($fila['id_usuario'])){
+ if(empty($fila[0])){
  	header("location:../html/iniciar_sesion.html");
  }
 else{
