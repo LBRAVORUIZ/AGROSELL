@@ -93,7 +93,7 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
     $resultado->close();
 }
 $conexion->close();
-header("location:../html/mispedidos.html");
+header("location:../php/mispedidos.php");
 }
 
 
