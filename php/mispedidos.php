@@ -78,8 +78,6 @@ else{
   
 $usuario=$_SESSION['id_usuario'];
 
-
-$imagen=addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
 conexion();
 $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
  if ($resultado = $conexion->query($query)) {
