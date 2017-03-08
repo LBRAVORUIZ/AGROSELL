@@ -68,7 +68,7 @@
   </header>
 <?php 
 
-require '../php/conexion.php';
+require 'conexion.php';
 session_start();
 
 if (empty($_SESSION['id_usuario'])) {
@@ -93,7 +93,6 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
     $resultado->close();
 }
 $conexion->close();
-header("location:../php/mispedidos.php");
 }
 
 
