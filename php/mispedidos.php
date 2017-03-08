@@ -67,7 +67,7 @@
     </nav>
   </header>
 
- <table>
+ <table border="1">
 <tbody>
     <tr>
       <td>Producto</td>
@@ -96,12 +96,12 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
     /* obtener el array de objetos */
     while ($fila = $resultado->fetch_row()) {
       echo "<tr>
-      <td>'$fila[0]'</td>
-      <td>'$fila[1]'</td>
-      <td>'$fila[2]'</td>
-      <td>'$fila[3]'</td>
-      <td>'$fila[4]'</td>
-      <td>'$fila[5]'</td>
+      <td>$fila[2]</td>
+      <td>$fila[3]</td>
+      <td>$fila[4]</td>
+      <td>$fila[5]</td>
+      <td>$fila[6]</td>
+      <td>$fila[7]</td>
     </tr>";
     }
 
