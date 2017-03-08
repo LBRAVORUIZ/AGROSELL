@@ -66,6 +66,17 @@
       </ul>
     </nav>
   </header>
+
+ <table>
+<tbody>
+    <tr>
+      <td>Producto</td>
+      <td>Cantidad</td>
+      <td>Calidad</td>
+      <td>Precio</td>
+      <td>Descripción</td>
+      <td>Dirección</td>
+    </tr>
 <?php 
 
 require 'conexion.php';
@@ -84,7 +95,14 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
 
     /* obtener el array de objetos */
     while ($fila = $resultado->fetch_row()) {
-        printf ("%s (%s)\n (%s)\n", $fila[0], $fila[1], $fila[2]);
+      echo "<tr>
+      <td>'$fila[0]'</td>
+      <td>'$fila[1]'</td>
+      <td>'$fila[2]'</td>
+      <td>'$fila[3]'</td>
+      <td>'$fila[4]'</td>
+      <td>'$fila[5]'</td>
+    </tr>";
     }
 
     /* liberar el conjunto de resultados */
@@ -95,6 +113,9 @@ $conexion->close();
 
 
  ?>
+    
+  </tbody>
+  </table>
 
 <footer class="clase-general">
 <div class="pie_pagina_suscribirse">¡SUSCRÍBETE A NUESTRO NEWSLETTER!
