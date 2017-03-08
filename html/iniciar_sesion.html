@@ -103,7 +103,7 @@
   <form id="frm_crear_cuenta_agriculor" name="frm_crear_cuenta_agriculor" method="POST" action="../php/registrar_usuario.php">
   <tr><td width="10%">Nombres</td></tr>
     <tr>
-      <td width="80%"><input type="text" name="nombre_agricultor" class="input_crear_cuenta" id="nombre_agricultor" required>
+      <td width="80%"><input type="text" name="nombre_agricultor" class="input_crear_cuenta" id="nombre_agricultor" pattern="[A-Za-z]{4-16}" required>
       <input type="hidden" name="codigo" value="0">
       </td>
     </tr>
@@ -111,7 +111,7 @@
       <td id="td_texto_contraseña">Apellidos</td>
     </tr>
     <tr><td>
-    <input type="text" name="apellidos_agricultor" class="input_crear_cuenta" id="apellidos_agricultor" required>
+    <input type="text" name="apellidos_agricultor" class="input_crear_cuenta" id="apellidos_agricultor" pattern="[A-Za-z]{4-16}"  required>
     </td></tr>
       <tr>
       <td id="td_texto_contraseña">Email</td>
@@ -162,7 +162,7 @@
   <form id="frm_crear_cuenta_comerciante" name="frm_crear_cuenta_comerciante" method="POST" action="../php/registrar_usuario.php">
   <tr><td width="10%">Razon Social</td></tr>
     <tr>
-      <td width="80%"><input type="text" name="razon_social_comerciante" class="input_crear_cuenta" id="razon_social_comerciante" required>
+      <td width="80%"><input type="text" name="razon_social_comerciante" class="input_crear_cuenta" id="razon_social_comerciante"  pattern="[A-Za-z]{4-16}" required>
                       <input type="hidden" name="codigo" value="1">
       </td>
     </tr>
@@ -170,7 +170,7 @@
       <td id="td_texto_contraseña">Ruc</td>
     </tr>
     <tr><td>
-    <input type="number" name="ruc_comerciante" class="input_crear_cuenta" id="ruc_comerciante" required>
+    <input type="number" name="ruc_comerciante" class="input_crear_cuenta" id="ruc_comerciante" pattern="^[20|15|10]\d{11}$" required >
     </td></tr>
       <tr>
       <td id="td_texto_contraseña">Email</td>

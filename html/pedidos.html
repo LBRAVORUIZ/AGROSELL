@@ -45,26 +45,26 @@
   <form id="frm_crear_cuenta_agriculor" name="frm_crear_cuenta_agriculor" method="POST" action="../php/realizar_pedido.php" enctype="multipart/form-data">
   <tr><td width="10%">Producto</td></tr>
     <tr>
-      <td width="80%"><input type="text" name="producto" class="input_crear_cuenta" id="producto">
+      <td width="80%"><input type="text" name="producto" class="input_crear_cuenta" id="producto" pattern="[A-Za-z]{4-16}" required>
       </td>
     </tr>
     <tr>
       <td id="td_texto_contraseña">Cantidad (Quital)</td>
     </tr>
     <tr><td>
-    <input type="number" name="cantidad" class="input_crear_cuenta" id="cantidad">
+    <input type="number" name="cantidad" class="input_crear_cuenta" id="cantidad" required>
     </td></tr>
     <tr>
       <td id="td_texto_contraseña">Calidad</td>
     </tr>
     <tr><td>
-    <input type="text" name="calidad" class="input_crear_cuenta" id="calidad">
+    <input type="text" name="calidad" class="input_crear_cuenta" id="calidad" pattern="[A-Za-z]{4-16}" required>
     </td></tr>
       <tr>
       <td id="td_texto_contraseña">Precio (S/)</td>
     </tr>
     <tr><td>
-    <input type="text" name="precio" class="input_crear_cuenta" id="precio">
+    <input type="text" name="precio" class="input_crear_cuenta" id="precio" required>
     </td></tr>
       <tr>
       <td id="td_texto_contraseña">Descripción del Producto</td>
@@ -76,14 +76,14 @@
       <td id="td_texto_contraseña">Dirección</td>
     </tr>
     <tr><td>
-    <input type="text" name="direccion" class="input_crear_cuenta" id="direccion">
+    <input type="text" name="direccion" class="input_crear_cuenta" id="direccion" required>
     </td></tr>
        <tr>
       <td id="td_texto_contraseña">Imagen</td>
     </tr>
     <tr><td>
     <br>
-    <input type="file" name="imagen"  id="imagen">
+    <input type="file" name="imagen"  id="imagen" required>
     </td></tr>
      </form>
     <tr>
