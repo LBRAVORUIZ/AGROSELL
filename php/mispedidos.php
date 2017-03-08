@@ -97,12 +97,12 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
     /* obtener el array de objetos */
     while ($fila = $resultado->fetch_row()) {
       echo "<tr>
-      <td>$fila[2]</td>
-      <td>$fila[3]</td>
-      <td>$fila[4]</td>
-      <td>$fila[5]</td>
-      <td>$fila[6]</td>
-      <td>$fila[7]</td>
+      <td>&nbsp;&nbsp;$fila[2]</td>
+      <td>&nbsp;&nbsp;$fila[3]</td>
+      <td>&nbsp;&nbsp;$fila[4]</td>
+      <td>&nbsp;&nbsp;$fila[5]</td>
+      <td>&nbsp;&nbsp;$fila[6]</td>
+      <td>&nbsp;&nbsp;$fila[7]</td>
     </tr>";
     }
 

@@ -4,7 +4,7 @@ margin-top:2%;
 margin-left: 15%;
 border: solid 1px;
 border-color: #C2B9B9;
-text-align: center;
+text-align: left;
 vertical-align: middle;
 font-family: arial;
 border-radius: 5px;
@@ -14,6 +14,7 @@ background: #F7F6F6;
 #fila_principal_pedido{
 font-family: cursive;
 background: #6BF44B;
+text-align: center;
 }
 
 
