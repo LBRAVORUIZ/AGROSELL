@@ -1,0 +1,19 @@
+#tabla_pedido{
+width:60%;
+margin-top:2%;
+margin-left: 15%;
+border: solid 1px;
+border-color: #C2B9B9;
+text-align: center;
+vertical-align: middle;
+font-family: arial;
+border-radius: 5px;
+background: #F7F6F6;
+}
+
+#fila_principal_pedido{
+font-family: cursive;
+background: #6BF44B;
+}
+
+
