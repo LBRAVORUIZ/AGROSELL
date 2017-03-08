@@ -41,7 +41,7 @@
   </header>
       </li>
         <li id="li_logo">
-     <a href="index.html" id="logo_inicio"><img src="logo/logo_agrosell.png" class="logo_agrosell"></a>
+     <a href="index.php" id="logo_inicio"><img src="logo/logo_agrosell.png" class="logo_agrosell"></a>
         </li>
         <li id="li_buscar">
         <div class="buscar_div">
