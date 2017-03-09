@@ -81,7 +81,7 @@ session_start();
 $query= "SELECT * FROM pedido WHERE  id_pedido='$id_pedido'";
 conexion();
  $resultado=$conexion->query($query);
- $fila=$mysqli->fetch_array(MYSQLI_BOTH);
+ $fila=$resultado->fetch_array(MYSQLI_BOTH);
 
  ?>
 <div class="div_categorias">
