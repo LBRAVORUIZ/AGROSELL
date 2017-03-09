@@ -67,10 +67,40 @@
       </ul>
     </nav>
   </header>
+
 <div class="div_categorias">
  <div class='form_container '>
 <div class="slideContainer">
 <h3>LAS MEJORES FRUTAS</h3>
+  <?php 
+
+require 'php/conexion.php';
+
+conexion();
+$query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
+ if ($resultado = $conexion->query($query)) {
+
+    /* obtener el array de objetos */
+    while ($fila = $resultado->fetch_row()) {
+      echo "
+<div class='slide'>
+<div class='presentacion_productos'><img src='data:image/png;base64,base64_encode($fila[8])' class='tamaño_imagen'>
+<div class='div_texto'>$fila[2]<br><font class='monto'>$fila[3] QQ</font></div>
+<div class='div_boton'><a href='html/postulacion.html' class='myButton'>Postular</a></div>
+</div>
+</div>
+      ";
+    }
+
+    /* liberar el conjunto de resultados */
+    $resultado->close();
+}
+$conexion->close();
+
+
+
+ ?>
+<!--
 <div class="slide">
 <div class="presentacion_productos"><img src="productos/manzana.png" class="tamaño_imagen">
 <div class="div_texto">Manzana Roja-Villa Salvador<br><font class="monto">20 QQ</font></div>
@@ -283,6 +313,7 @@
         <div class="slide" data-background=''>
                         
         </div>
+        -->
     </div>
     <button class="left"> &#60; </button>
     <button class="right">&#62;</button>
