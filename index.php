@@ -78,7 +78,7 @@
 require 'php/conexion.php';
 
 conexion();
-$query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
+$query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedido DESC  LIMIT 6";
  if ($resultado = $conexion->query($query)) {
 
     /* obtener el array de objetos */
@@ -87,8 +87,8 @@ $query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
 
     
 <div class='slide'>
-<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila[8]);?>"  class="tamaño_imagen">
-<div class="div_texto"><?php echo $fila[2]; ?><br><font class="monto"><?php  echo $fila[3]; ?> QQ</font></div>
+<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila['imagen_pedido']);?>"  class="tamaño_imagen">
+<div class="div_texto"><?php echo $fila['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
 </div>
 </div>
@@ -98,11 +98,154 @@ $query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
 
     /* liberar el conjunto de resultados */
     $resultado->close();
-}
-$conexion->close();
 
  ?>
+
+ </div>
+    <button class="left"> &#60; </button>
+    <button class="right">&#62;</button>
+  </div>
+
+ <div class='form_container '>
+<div class="slideContainer">
+
+<h3>LAS MEJORES VERDURAS</h3> 
+  <?php 
+
+$query2 = "  SELECT * FROM  pedido WHERE categoria_producto='2' ORDER BY id_pedido DESC  LIMIT 6";
+ if ($resultado = $conexion->query($query2)) {
+
+    /* obtener el array de objetos */
+    while ($fila2 = $resultado2->fetch_row()) {
+?>
+
     
+<div class='slide'>
+<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila2['imagen_pedido']);?>"  class="tamaño_imagen">
+<div class="div_texto"><?php echo $fila2['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila2['precio_pedido']; ?> QQ</font></div>
+<div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
+</div>
+</div>
+
+<?php
+  }
+
+    /* liberar el conjunto de resultados */
+    $resultado2->close();
+}
+
+
+ ?>
+
+ </div>
+    <button class="left"> &#60; </button>
+    <button class="right">&#62;</button>
+  </div>
+
+ 
+ <div class='form_container '>
+<div class="slideContainer">
+  <h3>LOS MEJORES TUBERCULOS</h3>
+
+    <?php 
+
+$query3 = "  SELECT * FROM  pedido WHERE categoria_producto='3' ORDER BY id_pedido DESC  LIMIT 6";
+ if ($resultado3 = $conexion->query($query3)) {
+
+    /* obtener el array de objetos */
+    while ($fila3 = $resultado3->fetch_row()) {
+?>
+
+    
+<div class='slide'>
+<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila3['imagen_pedido']);?>"  class="tamaño_imagen">
+<div class="div_texto"><?php echo $fila3['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila3['precio_pedido']; ?> QQ</font></div>
+<div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
+</div>
+</div>
+
+<?php
+  }
+
+    /* liberar el conjunto de resultados */
+    $resultado3->close();
+}
+
+ ?>
+
+ </div>
+    <button class="left"> &#60; </button>
+    <button class="right">&#62;</button>
+  </div>
+
+
+ <div class='form_container '>
+<div class="slideContainer">
+ <h3>LOS MEJORES CEREALES</h3>
+
+  <?php 
+
+$query4 = " SELECT * FROM  pedido WHERE categoria_producto='4' ORDER BY id_pedido DESC  LIMIT 6";
+ if ($resultado4 = $conexion->query($query4)) {
+
+    /* obtener el array de objetos */
+    while ($fila4 = $resultado4->fetch_row()) {
+?>
+
+    
+<div class='slide'>
+<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila4['imagen_pedido']);?>"  class="tamaño_imagen">
+<div class="div_texto"><?php echo $fila4['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila4['precio_pedido']; ?> QQ</font></div>
+<div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
+</div>
+</div>
+
+<?php
+  }
+
+    /* liberar el conjunto de resultados */
+    $resultado4->close();
+}
+
+ ?>
+  </div>
+    <button class="left"> &#60; </button>
+    <button class="right">&#62;</button>
+  </div>
+
+
+ <div class='form_container '>
+<div class="slideContainer">
+<h3>LAS MEJORES SEMILLAS</h3>
+  <?php 
+
+$query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedido DESC  LIMIT 6";
+ if ($resultado5 = $conexion->query($query5)) {
+
+    /* obtener el array de objetos */
+    while ($fila5 = $resultado5->fetch_row()) {
+?>
+
+    
+<div class='slide'>
+<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila5['imagen_pedido']);?>"  class="tamaño_imagen">
+<div class="div_texto"><?php echo $fila5['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila5['precio_pedido']; ?> QQ</font></div>
+<div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
+</div>
+</div>
+
+<?php
+  }
+
+    /* liberar el conjunto de resultados */
+    $resultado5->close();
+}
+
+ ?>
+ </div>
+    <button class="left"> &#60; </button>
+    <button class="right">&#62;</button>
+  </div>
 <!--
 <div class="slide">
 <div class="presentacion_productos"><img src="data:image/jpg;base64,<?php echo base64_encode($fila[8]);?>" class="tamaño_imagen">
@@ -317,10 +460,7 @@ $conexion->close();
                         
         </div>
         -->
-    </div>
-    <button class="left"> &#60; </button>
-    <button class="right">&#62;</button>
-  </div>
+
 </div>
 
 <footer class="clase-general">
