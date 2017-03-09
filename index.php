@@ -16,12 +16,32 @@
 <script type="application/ld+json">
 
 {"@context":"http://agrosell.pe.hu","@type":"Plataforma Web","url":"http://agrosell.pe.hu","contactPoint":[{"@type":"ContactPoint","telephone":"983118757","contactType":"customer service"}]}</script>
-<script type="text/javascript">
+<script>
   
-              function enviar_valor()
+              function enviar_valor_1()
               {
-                document.valor_pedido.submit()
+                document.valor_pedido_1.submit()
               }
+                function enviar_valor_2()
+              {
+                document.valor_pedido_2.submit()
+              }
+
+               function enviar_valor_3()
+               {
+                document.valor_pedido_3.submit()
+              }
+
+              function enviar_valor_4()
+              {
+                document.valor_pedido_4.submit()
+              }
+                function enviar_valor_5()
+              {
+                document.valor_pedido_5.submit()
+              }
+
+
 
 </script>
 </head>
@@ -98,10 +118,10 @@ $query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedid
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<form name="valor_pedido" method="POST" action="php/postulacion.php">
+<form name="valor_pedido_1" method="POST" action="php/postulacion.php">
 <input type="hidden" name="codigo" value="<?php $fila['id_pedido'] ?>">
 </form>
-<a onclick="enviar_valor()" class='myButton'>Postular</a></div>
+<a onclick="enviar_valor_1()" class='myButton'>Postular</a></div>
 </div>
 </div>
 
@@ -135,10 +155,10 @@ $query2 = "  SELECT * FROM  pedido WHERE categoria_producto='2' ORDER BY id_pedi
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila2['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila2['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila2['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<form name="valor_pedido" method="POST" action="php/postulacion.php">
+<form name="valor_pedido_2" method="POST" action="php/postulacion.php">
 <input type="hidden" name="codigo" value="<?php $fila2['id_pedido'] ?>">
 </form>
-<a onclick="enviar_valor()" class='myButton'>Postular</a>
+<a onclick="enviar_valor_2()" class='myButton'>Postular</a>
 </div>
 </div>
 </div>
@@ -177,10 +197,10 @@ $query3 = "  SELECT * FROM  pedido WHERE categoria_producto='3' ORDER BY id_pedi
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila3['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila3['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila3['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<form name="valor_pedido" method="POST" action="php/postulacion.php">
+<form name="valor_pedido_3" method="POST" action="php/postulacion.php">
 <input type="hidden" name="codigo" value="<?php $fila3['id_pedido'] ?>">
 </form>
-<a onclick="enviar_valor()" class='myButton'>Postular</a></div>
+<a onclick="enviar_valor_3()" class='myButton'>Postular</a></div>
 </div>
 </div>
 
@@ -217,10 +237,10 @@ $query4 = " SELECT * FROM  pedido WHERE categoria_producto='4' ORDER BY id_pedid
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila4['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila4['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila4['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<form name="valor_pedido" method="POST" action="php/postulacion.php">
+<form name="valor_pedido_4" method="POST" action="php/postulacion.php">
 <input type="hidden" name="codigo" value="<?php $fila4['id_pedido'] ?>">
 </form>
-<a onclick="enviar_valor()" class='myButton'>Postular</a></div>
+<a onclick="enviar_valor_4()" class='myButton'>Postular</a></div>
 </div>
 </div>
 
@@ -255,10 +275,10 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila5['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila5['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila5['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<form name="valor_pedido" method="POST" action="php/postulacion.php">
+<form name="valor_pedido_5" method="POST" action="php/postulacion.php">
 <input type="hidden" name="codigo" value="<?php $fila2['id_pedido'] ?>">
 </form>
-<a onclick="enviar_valor()" class='myButton'>Postular</a></div>
+<a onclick="enviar_valor_5()" class='myButton'>Postular</a></div>
 </div>
 </div>
 
