@@ -88,7 +88,7 @@ $query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
     
 <div class='slide'>
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila[8]);?>"  class="tamaño_imagen">
-<div class="div_texto"><?php$fila[2] ?><br><font class="monto"><?php $fila[3] ?> QQ</font></div>
+<div class="div_texto"><?php echo $fila[2]; ?><br><font class="monto"><?php  echo $fila[3]; ?> QQ</font></div>
 <div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
 </div>
 </div>
