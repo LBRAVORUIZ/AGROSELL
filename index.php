@@ -96,7 +96,7 @@ $query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedid
 <?php
   }
     $resultado->close();
-
+}
  ?>
 
  </div>
