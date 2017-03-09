@@ -82,7 +82,7 @@ $query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedid
  if ($resultado = $conexion->query($query)) {
 
     /* obtener el array de objetos */
-    while ($fila = $resultado->fetch_row()) {
+    while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
 ?>
 
     
@@ -114,7 +114,7 @@ $query2 = "  SELECT * FROM  pedido WHERE categoria_producto='2' ORDER BY id_pedi
  if ($resultado2= $conexion->query($query2)) {
 
     /* obtener el array de objetos */
-    while ($fila2 = $resultado2->fetch_row()) {
+    while ($fila2 = $resultado2->fetch_array(MYSQLI_BOTH)) {
 ?>
 
     
@@ -151,7 +151,7 @@ $query3 = "  SELECT * FROM  pedido WHERE categoria_producto='3' ORDER BY id_pedi
  if ($resultado3 = $conexion->query($query3)) {
 
     /* obtener el array de objetos */
-    while ($fila3 = $resultado3->fetch_row()) {
+    while ($fila3 = $resultado3->fetch_array(MYSQLI_BOTH)) {
 ?>
 
     
@@ -187,7 +187,7 @@ $query4 = " SELECT * FROM  pedido WHERE categoria_producto='4' ORDER BY id_pedid
  if ($resultado4 = $conexion->query($query4)) {
 
     /* obtener el array de objetos */
-    while ($fila4 = $resultado4->fetch_row()) {
+    while ($fila4 = $resultado4->fetch_array(MYSQLI_BOTH)) {
 ?>
 
     
@@ -221,7 +221,7 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
  if ($resultado5 = $conexion->query($query5)) {
 
     /* obtener el array de objetos */
-    while ($fila5 = $resultado5->fetch_row()) {
+    while ($fila5 = $resultado5->fetch_array(MYSQLI_BOTH)) {
 ?>
 
     
