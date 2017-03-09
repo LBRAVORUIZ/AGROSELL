@@ -69,40 +69,7 @@
   </header>
 
 <div class="div_categorias">
- <div class='form_container '>
-<div class="slideContainer">
-<h3>LAS MEJORES FRUTAS</h3>
-
-    <?php 
-
-require 'php/conexion.php';
-
-conexion();
-$query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedido DESC  LIMIT 6";
- if ($resultado = $conexion->query($query)) {
-
-    /* obtener el array de objetos */
-    while ($fila = $resultado->fetch_row()) {
-?>
-
-    
-<div class='slide'>
-<div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila['imagen_pedido']);?>"  class="tamaño_imagen">
-<div class="div_texto"><?php echo $fila['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila['precio_pedido']; ?> QQ</font></div>
-<div class="div_boton"><a href="html/postulacion.html" class='myButton'>Postular</a></div>
-</div>
-</div>
-
-<?php
-  }
-    $resultado->close();
-
- ?>
-
- </div>
-    <button class="left"> &#60; </button>
-    <button class="right">&#62;</button>
-  </div>
+ 
 </div>
 
 <footer class="clase-general">
