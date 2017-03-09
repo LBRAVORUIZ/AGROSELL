@@ -98,11 +98,11 @@ $query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
     while ($fila = $resultado->fetch_row()) {
       echo "<tr>
       <td>&nbsp;&nbsp;$fila[2]</td>
-      <td>&nbsp;&nbsp;$fila[3]</td>
       <td>&nbsp;&nbsp;$fila[4]</td>
       <td>&nbsp;&nbsp;$fila[5]</td>
       <td>&nbsp;&nbsp;$fila[6]</td>
       <td>&nbsp;&nbsp;$fila[7]</td>
+      <td>&nbsp;&nbsp;$fila[8]</td>
     </tr>";
     }
 

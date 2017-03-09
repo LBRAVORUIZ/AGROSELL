@@ -71,12 +71,24 @@
       </ul>
     </nav>
   </header>
- 
+
+ <?php 
+require 'conexion.php';
+
+$id_pedido=$_POST['codigo'];
+
+session_start();
+$query= "SELECT * FROM pedido WHERE  id_pedido='$id_pedido'";
+conexion();
+ $resultado=$conexion->query($query);
+ $fila=$mysqli->fetch_array(MYSQLI_BOTH);
+
+ ?>
 <div class="div_categorias">
 <div class="parte_superior">
-<div class="parte_superior_titulo">Manzana Roja &nbsp; Villa el Salvador
+<div class="parte_superior_titulo"><?php echo $fila['producto_pedido'];?>
 <br>
-<a  href="javascript:enviar_postulacion()" class="parte_superior_texto_direccion"><span class="icon-location"></span><font>Av Pachacutec 4030, Villa El Salvado</font></a>
+<a  href="javascript:enviar_postulacion()" class="parte_superior_texto_direccion"><span class="icon-location"></span><font><?php echo $fila['direccion_pedido'];?></font></a>
 </div>
 <div class="parte_superior_iconos">
 <a href="" class="parte_superior_iconos_facebook"><span class="icon-facebook"></span></a>
@@ -90,18 +102,22 @@
 <div class="parte_inferior">
 
 <!--IMAGEN-->
-<div class="parte_imagen"><img src="../productos/manzana.png" class="imagen_tamaño_pag2"></div>
+<div class="parte_imagen"><img src="data:image/png;base64,<?php echo  base64_encode($fila2['imagen_pedido']);?>" class="imagen_tamaño_pag2"></div>
 
 <!--ESPECIFICACIONES-->
 <div class="parte_especificaciones">
 <div class="parte_especificaciones_div">PRODUCTO
 <ul class="parte_especificaciones_contenido">
-  <li>Color:Rojo</li>
-  <li>Orgánico:No</li>
+<li>Calidad:<?php echo $fila['calidad_pedido'];?></li>
+  <li>Descripción:<?php echo $fila['producto_descripcion'];?></li>
 </ul>
 </div>
 <div class="parte_especificaciones_div">EMPRESA
   <ul class="parte_especificaciones_contenido">
+  <?php
+$resultado->close();
+$conexion->close();
+   ?>
   <li>Razon Social:AgroSell </li>
   <li>Ruc:20122356789</li>
   <li>Ubicación:Panamerica Sur km 16-Surco</li>
