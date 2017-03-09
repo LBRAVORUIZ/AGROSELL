@@ -95,8 +95,6 @@ $query = "  SELECT * FROM  pedido WHERE categoria_producto='1' ORDER BY id_pedid
 
 <?php
   }
-
-    /* liberar el conjunto de resultados */
     $resultado->close();
 
  ?>
@@ -246,6 +244,19 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
     <button class="left"> &#60; </button>
     <button class="right">&#62;</button>
   </div>
+
+
+</div>
+
+<footer class="clase-general">
+<div class="pie_pagina_suscribirse">¡SUSCRÍBETE A NUESTRO NEWSLETTER!
+<input class="pie_pagina_input_suscribirse" type="email" name="email" placeholder="Suscríbite con tu email">
+<a href="#" class="pie_pagina_boton_suscribirse">Suscribirse</a>
+</div>
+<div class="pie_pagina_forma_pago_div"><img class="pie_pagina_forma_pago_imagen_efectivo" src="iconos/forma de pago/efectivo.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_visa" src="iconos/forma de pago/visa.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_mastercard" src="iconos/forma de pago/mastercard.png"></div>
+</footer>
+</body>
+</html>
 <!--
 <div class="slide">
 <div class="presentacion_productos"><img src="data:image/jpg;base64,<?php echo base64_encode($fila[8]);?>" class="tamaño_imagen">
@@ -460,15 +471,3 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
                         
         </div>
         -->
-
-</div>
-
-<footer class="clase-general">
-<div class="pie_pagina_suscribirse">¡SUSCRÍBETE A NUESTRO NEWSLETTER!
-<input class="pie_pagina_input_suscribirse" type="email" name="email" placeholder="Suscríbite con tu email">
-<a href="#" class="pie_pagina_boton_suscribirse">Suscribirse</a>
-</div>
-<div class="pie_pagina_forma_pago_div"><img class="pie_pagina_forma_pago_imagen_efectivo" src="iconos/forma de pago/efectivo.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_visa" src="iconos/forma de pago/visa.png">&nbsp;<img class="pie_pagina_forma_pago_imagen_mastercard" src="iconos/forma de pago/mastercard.png"></div>
-</footer>
-</body>
-</html>
