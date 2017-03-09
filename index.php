@@ -84,7 +84,7 @@ $query = " SELECT * FROM  pedido ORDER BY id_pedido DESC  LIMIT 6";
     while ($fila = $resultado->fetch_row()) {
       echo "
 <div class='slide'>
-<div class='presentacion_productos'><img src='base64_encode($fila[8])' class='tamaño_imagen'>
+<div class='presentacion_productos'><img src='data:image/jpg;base64, base64_encode($fila[8]);' class='tamaño_imagen'>
 <div class='div_texto'>$fila[2]<br><font class='monto'>$fila[3] QQ</font></div>
 <div class='div_boton'><a href='html/postulacion.html' class='myButton'>Postular</a></div>
 </div>
@@ -102,7 +102,7 @@ $conexion->close();
  ?>
 <!--
 <div class="slide">
-<div class="presentacion_productos"><img src="productos/manzana.png" class="tamaño_imagen">
+<div class="presentacion_productos"><img src="data:image/jpg;base64,<?php echo base64_encode($fila[8]);?>" class="tamaño_imagen">
 <div class="div_texto">Manzana Roja-Villa Salvador<br><font class="monto">20 QQ</font></div>
 <div class="div_boton"><a href="html/postulacion.html" class="myButton">Postular</a></div>
 </div>
