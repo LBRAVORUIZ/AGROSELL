@@ -109,7 +109,7 @@ conexion();
 <div class="parte_especificaciones_div">PRODUCTO
 <ul class="parte_especificaciones_contenido">
 <li>Calidad:<?php echo $fila['calidad_pedido'];?></li>
-  <li>Descripción:<?php echo $fila['producto_descripcion'];?></li>
+  <li>Descripción:<?php echo $fila['descripcion_pedido'];?></li>
 </ul>
 </div>
 <div class="parte_especificaciones_div">EMPRESA
