@@ -66,7 +66,7 @@ $conexion->close();
 <font class="contacto_superior_precio">(S/250.00 /QQ)</font>
 </div>
 <div class="contacto_superior_div">
-<a href="#" class="myButtoni">POSTULAR AHORA</a>
+<a href="#" class="myButton_pag2">POSTULAR AHORA</a>
 </div>
 </div>
 
