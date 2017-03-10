@@ -92,19 +92,21 @@ $usuario=$_SESSION['id_usuario'];
 $pedido=$_SESSION['id_pedido'];
 
 conexion();
-$query = "SELECT * FROM postulacion WHERE id_usuario='$usuario'AND id_pedido='$pedido'";
-$query = "SELECT * FROM pedido WHERE id_usuario='$usuario'";
+$query = "SELECT id_pedido FROM postulacion WHERE id_usuario='$usuario'";
  if ($resultado = $conexion->query($query)) {
-
+$fila = $resultado->fetch_array(MYSQL_BOTH);
+ $query = "SELECT * FROM pedido WHERE id_usuario='$fila['id_pedido']'";
+$resultado2 = $conexion->query($query)
     /* obtener el array de objetos */
-    while ($fila = $resultado->fetch_row()) {
+    while ($fila2 = $resultado2->fetch_array(MYSQL_BOTH)) {
+
       echo "<tr>
-      <td>&nbsp;&nbsp;$fila[2]</td>
-      <td>&nbsp;&nbsp;$fila[4]</td>
-      <td>&nbsp;&nbsp;$fila[5]</td>
-      <td>&nbsp;&nbsp;$fila[6]</td>
-      <td>&nbsp;&nbsp;$fila[7]</td>
-      <td>&nbsp;&nbsp;$fila[8]</td>
+      <td>&nbsp;&nbsp;$fila2[2]</td>
+      <td>&nbsp;&nbsp;$fila2[4]</td>
+      <td>&nbsp;&nbsp;$fila2[5]</td>
+      <td>&nbsp;&nbsp;$fila2[6]</td>
+      <td>&nbsp;&nbsp;$fila2[7]</td>
+      <td>&nbsp;&nbsp;$fila2[8]</td>
     </tr>";
     }
 
