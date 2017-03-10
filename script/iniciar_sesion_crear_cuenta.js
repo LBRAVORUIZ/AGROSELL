@@ -1,4 +1,4 @@
-	function(){
+$(document).ready(function(){
 
          $('#tabla_iniciar_sesion').show(); //muestro mediante id
 		 $('#tabla_crear_cuenta').hide();
@@ -53,6 +53,6 @@
       
 
 
-	}
+	});
 
 	
