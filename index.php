@@ -31,7 +31,7 @@
         data: "valor="+valor,
         success: function(resp)
         {
-              document.getElementById(".div_categorias").innerHTML= resp;
+              document.getElementById("div_categorias").innerHTML= resp;
         }
 
     });
@@ -93,7 +93,7 @@
     </nav>
   </header>
 
-<div class="div_categorias">
+<div class="div_categorias" id="div_categorias">
  <div class='form_container '>
 <div class="slideContainer">
 <h3>LAS MEJORES FRUTAS</h3>
