@@ -84,7 +84,7 @@
    <nav id="menu_usuario_nav">
       <ul>
         <li><a href="html/iniciar_sesion.html"><span class="flaticon-social"></span>Iniciar Sesion</a></li>
-        <li><a href="#"><span class="flaticon-tableta"></span>Mis Postulaciones</a></li>
+        <li><a href="php/mispostulaciones.php"><span class="flaticon-tableta"></span>Mis Postulaciones</a></li>
         <li><a href="php/mispedidos.php"><span class="flaticon-transporte"></span>Mis Pedidos</a></li>
         <li><a href="#"><span class="flaticon-anillo"></span>Notificaciones</a></li>
       </ul>

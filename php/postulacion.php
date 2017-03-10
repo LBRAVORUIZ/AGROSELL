@@ -27,7 +27,7 @@
       <nav id="nav_menu_superior">
       <ul>
       <li>
-    <a href="#" id="boton_menu" class="bt-menu"><span  class="icono_menu" ></span></a>
+    <a  id="boton_menu" class="bt-menu"><span  class="icono_menu" ></span></a>
  <header id="menu_categorias">
    <nav id="menu_categorias_nav">
       <ul>
@@ -38,9 +38,9 @@
         <li><a href="#"><span class="flaticon-comida-6"></span>Cereales</a></li>
         <li><a href="#"><span class="flaticon-cafe-1"></span>Semillas</a></li>
         <li><a href="#"><span class="flaticon-transporte"></span>Transpostistas Oficiales</a></li>
-        <li><a href="#"><span class="flaticon-dinero"></span>Lista de Precios</a></li>
+        <li><a href="#"><span class="flaticon-ordenador"></span>Lista de Precios</a></li>
         <li><a href="#"><span class="flaticon-hoja"></span>Plagas y Tratamiento</a></li>
-        <li><a href="#"><span class="flaticon-hoja"></span>Mas</a></li>
+        <li><a href="#"><span class="flaticon-signos"></span>Mas</a></li>
       </ul>
     </nav>
   </header>
@@ -53,9 +53,22 @@
         <input type="search" class="caja_buscar" name="buscar productos"  placeholder="Buscar productos"><a href="#" align="center" class="myButton_buscar"><span class=" icono_buscar"></span></a>
         </div>
         </li>
-        <li id="li_usuario"><a href="" align="center"><span class="usuario"></span></a></li>
-        <li id="li_carrito_compras"><a href="" align="center"><span class="carrito-compras"></span></a></li>
-        <li id="li_iniciar_sesion"><a href="#" class="myButtoni">Iniciar Sesión</a></li>
+        <li id="li_usuario"><a align="center" id="usuario"><span class="usuario"></span></a>
+   
+    <header id="menu_usuario">
+   <nav id="menu_usuario_nav">
+      <ul>
+        <li><a href="../html/iniciar_sesion.html"><span class="flaticon-social"></span>Iniciar Sesion</a></li>
+        <li><a href="mispostulaciones.php"><span class="flaticon-tableta"></span>Mis Postulaciones</a></li>
+        <li><a href="mispedidos.php"><span class="flaticon-transporte"></span>Mis Pedidos</a></li>
+        <li><a href="#"><span class="flaticon-anillo"></span>Notificaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+        </li>
+        <li id="li_carrito_compras"><a href="../html/pedidos.html" align="center"><span class="carrito-compras"></span></li>
+        <li id="li_iniciar_sesion"><a href="../html/iniciar_sesion.html" class="myButtoni">Iniciar Sesión</a></li>
       </ul>
     </nav>
   </header>
