@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>AgroSell</title>
 	<link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
 	<script src=": http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <link rel="shortcut icon" sizes="100x100" href="logo/agrosell.png">
@@ -23,6 +24,10 @@
 
   $(".myButton").click(function () {
     var valor= $(this).attr("id");
+
+    $("#valor_pedido").val(valor);
+    document.frm_pedido.submit();
+    /*
   $.ajax({
 
         type: "POST",
@@ -34,6 +39,7 @@
         }
 
     });
+    */
 });
 
 });
@@ -259,7 +265,7 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
 <div class="presentacion_productos"><img src="data:image/png;base64,<?php echo  base64_encode($fila5['imagen_pedido']);?>"  class="tamaño_imagen">
 <div class="div_texto"><?php echo $fila5['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila5['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
-<a  id="<?php echo $fila5['id_pedido']; ?>"class='myButton'>Postular</a></div>
+<a  id="<?php echo $fila5['id_pedido']; ?>" class='myButton'>Postular</a></div>
 </div>
 </div>
 
@@ -277,7 +283,9 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
   </div>
 
 </div>
-
+<form name="frm_pedido" method="POST" action="php/postulacion.php">
+ <input type="hidden" name="valor_pedido"  id="valor_pedido"> 
+</form>
 <footer class="clase-general">
 <div class="pie_pagina_suscribirse">¡SUSCRÍBETE A NUESTRO NEWSLETTER!
 <input class="pie_pagina_input_suscribirse" type="email" name="email" placeholder="Suscríbite con tu email">
