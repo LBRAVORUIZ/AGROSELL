@@ -40,10 +40,7 @@ conexion();
 </div>
 <div class="parte_especificaciones_div">EMPRESA
   <ul class="parte_especificaciones_contenido">
-  <?php
-$resultado->close();
-$conexion->close();
-   ?>
+
   <li>Razon Social:AgroSell </li>
   <li>Ruc:20122356789</li>
   <li>Ubicación:Panamerica Sur km 16-Surco</li>
@@ -61,10 +58,11 @@ $conexion->close();
 <!--CONTACTO-FROMULARIO-SUPERIOR-->
 <div class="contacto_superior">
 <div class="contacto_superior_div">
-<font class="contacto_superior_monto">200 QQ</font>
+<font class="contacto_superior_monto"> <?php echo $fila['cantidad_pedido'];?> QQ</font>
 <br>
-<font class="contacto_superior_precio">(S/250.00 /QQ)</font>
+<font class="contacto_superior_precio">(S/ <?php echo $fila['precio_pedido'];?> /QQ)</font>
 </div>
+ 
 <div class="contacto_superior_div">
 <a href="#" class="myButton_pag2">POSTULAR AHORA</a>
 </div>
@@ -125,3 +123,8 @@ $conexion->close();
 
 </div>
 </div>
+
+ <?php
+$resultado->close();
+$conexion->close();
+   ?>
