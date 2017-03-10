@@ -64,7 +64,6 @@ require 'conexion.php';
 
 $id_pedido=$_POST['valor_pedido'];
 session_start();
-$_SESSION['id_pedido']=$id_pedido;
 $query= "SELECT * FROM pedido WHERE  id_pedido='$id_pedido'";
 conexion();
  $resultado=$conexion->query($query);
