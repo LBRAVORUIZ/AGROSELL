@@ -23,7 +23,7 @@
 
   $(".myButton").click(function () {
     var valor= $(this).attr("id");
-   
+   alert(valor);
   $.ajax({
 
         type: "POST",
