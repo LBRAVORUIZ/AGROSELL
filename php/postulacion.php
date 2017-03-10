@@ -102,7 +102,7 @@ conexion();
 <div class="parte_inferior">
 
 <!--IMAGEN-->
-<div class="parte_imagen"><img src="data:image/png;base64,<?php echo  base64_encode($fila2['imagen_pedido']);?>" class="imagen_tamaño_pag2"></div>
+<div class="parte_imagen"><img src="data:image/png;base64,<?php echo  base64_encode($fila['imagen_pedido']);?>" class="imagen_tamaño_pag2"></div>
 
 <!--ESPECIFICACIONES-->
 <div class="parte_especificaciones">

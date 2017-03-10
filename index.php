@@ -156,7 +156,7 @@ $query2 = "  SELECT * FROM  pedido WHERE categoria_producto='2' ORDER BY id_pedi
 <div class="div_texto"><?php echo $fila2['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila2['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
 <form name="valor_pedido_2" method="POST" action="php/postulacion.php">
-<input type="hidden" name="codigo" value="<?php $fila2['id_pedido'] ?>">
+<input type="hidden" name="codigo" value="<?php echo $fila2['id_pedido'];?>">
 </form>
 <a onclick="enviar_valor_2()" class='myButton'>Postular</a>
 </div>
@@ -198,7 +198,7 @@ $query3 = "  SELECT * FROM  pedido WHERE categoria_producto='3' ORDER BY id_pedi
 <div class="div_texto"><?php echo $fila3['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila3['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
 <form name="valor_pedido_3" method="POST" action="php/postulacion.php">
-<input type="hidden" name="codigo" value="<?php $fila3['id_pedido'] ?>">
+<input type="hidden" name="codigo" value="<?php echo $fila3['id_pedido']; ?>">
 </form>
 <a onclick="enviar_valor_3()" class='myButton'>Postular</a></div>
 </div>
@@ -238,7 +238,7 @@ $query4 = " SELECT * FROM  pedido WHERE categoria_producto='4' ORDER BY id_pedid
 <div class="div_texto"><?php echo $fila4['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila4['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
 <form name="valor_pedido_4" method="POST" action="php/postulacion.php">
-<input type="hidden" name="codigo" value="<?php $fila4['id_pedido'] ?>">
+<input type="hidden" name="codigo" value="<?php echo $fila4['id_pedido']; ?>">
 </form>
 <a onclick="enviar_valor_4()" class='myButton'>Postular</a></div>
 </div>
@@ -276,7 +276,7 @@ $query5 = "  SELECT * FROM  pedido WHERE categoria_producto='5' ORDER BY id_pedi
 <div class="div_texto"><?php echo $fila5['cantidad_pedido']; ?><br><font class="monto"><?php  echo $fila5['precio_pedido']; ?> QQ</font></div>
 <div class="div_boton">
 <form name="valor_pedido_5" method="POST" action="php/postulacion.php">
-<input type="hidden" name="codigo" value="<?php $fila2['id_pedido'] ?>">
+<input type="hidden" name="codigo" value="<?php echo $fila5['id_pedido']; ?>">
 </form>
 <a onclick="enviar_valor_5()" class='myButton'>Postular</a></div>
 </div>
