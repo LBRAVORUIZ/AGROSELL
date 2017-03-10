@@ -94,8 +94,9 @@ $pedido=$_SESSION['id_pedido'];
 conexion();
 $query = "SELECT id_pedido FROM postulacion WHERE id_usuario='$usuario'";
  if ($resultado = $conexion->query($query)) {
-$fila = $resultado->fetch_array(MYSQL_BOTH);
- $query = "SELECT * FROM pedido WHERE id_usuario='$fila['id_pedido']'";
+
+while ($fila = $resultado->fetch_array(MYSQL_BOTH)) {
+ $query = "SELECT * FROM pedido WHERE id_usuario='".$fila['id_pedido']."'";
 $resultado2 = $conexion->query($query)
     /* obtener el array de objetos */
     while ($fila2 = $resultado2->fetch_array(MYSQL_BOTH)) {
@@ -109,7 +110,7 @@ $resultado2 = $conexion->query($query)
       <td>&nbsp;&nbsp;$fila2[8]</td>
     </tr>";
     }
-
+}
     /* liberar el conjunto de resultados */
     $resultado->close();
 }
