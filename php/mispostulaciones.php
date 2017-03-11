@@ -90,12 +90,12 @@ else{
   
 $usuario=$_SESSION['id_usuario'];
 conexion();
-$query = "SELECT id_pedido FROM postulacion WHERE id_usuario='".$usuario."'";
+$query = "SELECT id_pedido FROM postulacion WHERE id_usuario='$usuario'";
 $resultado = $conexion->query($query);
 
 while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
- 
- $query2= "SELECT * FROM pedido WHERE id_usuario='1'";
+ $id_pedido=$fila[0];
+ $query2= "SELECT * FROM pedido WHERE id_usuario='$id_pedido'";
  $resultado2 = $conexion->query($query2);
  $fila2 = $resultado2->fetch_array(MYSQLI_BOTH) ;
       echo "<tr>
