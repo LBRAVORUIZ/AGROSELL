@@ -90,11 +90,13 @@ else{
   
 $usuario=$_SESSION['id_usuario'];
 conexion();
+/*
 $query = "SELECT id_pedido FROM postulacion WHERE id_usuario='".$usuario."'";
  if ($resultado = $conexion->query($query)) {
 
 while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
- $query2= "SELECT * FROM pedido WHERE id_usuario='".$fila[0]."'";
+  */
+ $query2= "SELECT * FROM pedido WHERE id_usuario='1'";
  $resultado2 = $conexion->query($query2);
  $fila2 = $resultado2->fetch_array(MYSQLI_BOTH) ;
       echo "<tr>
@@ -105,12 +107,13 @@ while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
       <td>&nbsp;&nbsp;".$fila2[7]."</td>
       <td>&nbsp;&nbsp;".$fila2[8]."</td>
     </tr>";
+/*
+}
+   
 
 }
-    /* liberar el conjunto de resultados */
+*/
 
-}
-$resultado->close();
 $resultado2->close();
 $conexion->close();
 
