@@ -95,6 +95,7 @@ $query = "SELECT id_pedido FROM postulacion WHERE id_usuario='".$usuario."'";
 
 while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
  $query2= "SELECT * FROM pedido WHERE id_usuario='".$fila['id_pedido']."'";
+ echo $fila['id_pedido'];
   $resultado2 = $conexion->query($query2);
     /* obtener el array de objetos */
   $fila2 = $resultado2->fetch_array(MYSQLI_BOTH) ;
