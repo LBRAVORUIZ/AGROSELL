@@ -33,7 +33,7 @@ $(document).ready(function(){
         $.ajax({
 
         type: "POST",
-        url: "email_comerciante.php",
+        url: "../php/email_comerciante.php",
         data: "email="+email,
         success: function(resp)
         {
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
          $.ajax({
         type: "POST",
-        url: "email_agricultor.php",
+        url: "../php/email_agricultor.php",
         data: "email="+email,
         success: function(resp)
         {

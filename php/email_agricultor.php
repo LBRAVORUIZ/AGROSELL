@@ -8,7 +8,7 @@ $query = "SELECT email_usuario FROM usuario WHERE email_usuario='$email'";
       echo "ya existe este email";
  }
 
-
+close($conexion);
     
 
  ?>
