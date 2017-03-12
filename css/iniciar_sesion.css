@@ -259,7 +259,12 @@ border-bottom-color:#18C459;
 .input_crear_cuenta:invalid{
 	border-bottom-color: #D20202;
 }
-
+#error_email{
+	font-size: 14px;
+	font-family: cursive;
+	text-align: center;
+	color: #9C1717;
+}
 /*PAGINA RECUPERAR_CONTRASEÑA*/
 
 #div_recuperar_contraseña{
