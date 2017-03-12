@@ -89,8 +89,6 @@ $query = "SELECT id_pedido FROM postulacion WHERE id_usuario='$usuario'";
 $resultado = $conexion->query($query);
 
 while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
-  $valor=$fila[0]+1;
-  echo $valor;
  $query2= "SELECT * FROM pedido WHERE id_usuario='$fila[0]'";
  $resultado2 = $conexion->query($query2);
  $fila2 = $resultado2->fetch_array(MYSQLI_BOTH) ;
@@ -105,10 +103,9 @@ while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
       <td>&nbsp;&nbsp;<?php echo $fila2[8];?></td>
     </tr>
     <?php
-$resultado2->close();
 }
    
-
+$resultado2->close();
 
 $conexion->close();
 
