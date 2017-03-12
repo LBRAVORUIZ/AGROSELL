@@ -12,6 +12,9 @@ $query = "SELECT email_usuario FROM usuario WHERE email_usuario='$email'";
   });
 </script>";
  }
+ else{
+ 	echo "hola";
+ }
 
 $conexion->close();
     
