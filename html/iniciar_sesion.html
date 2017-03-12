@@ -26,7 +26,35 @@
               {
                 document.frm_iniciar_sesion.submit()
               }
+$(document).ready(function(){
+	$("#email_comerciante").change(function(){
+         var email=  $("#email_comerciante").val();
+        
+        $.ajax({
 
+        type: "POST",
+        url: "email_comerciante.php",
+        data: "email="+email,
+        success: function(resp)
+        {
+              document.getElementById("error_email_comerciante").innerHTML= resp;
+        }
+        });
+
+	$("#email_agricultor").change(function(){
+            var email=$("#email_agricultor").val();
+             $.ajax({
+
+        type: "POST",
+        url: "email_agricultor.php",
+        data: "producto="+email,
+        success: function(resp)
+        {
+              document.getElementById("error_email_agricultor").innerHTML= resp;
+        }
+            
+        });
+	});
 
   </script>
 </head>
@@ -118,6 +146,8 @@
     </tr>
     <tr><td>
     <input type="email" name="email" class="input_crear_cuenta" id="email_agricultor" placeholder="Ejemplo: agrosell@gmail.com">
+   <div id="error_email_agricultor">
+   </div>
     </td></tr>
      <tr>
       <td id="td_texto_contraseña">Contraseña</td>
@@ -177,6 +207,8 @@
     </tr>
     <tr><td>
     <input type="email" name="email" class="input_crear_cuenta" id="email_comerciante" placeholder="Ejemplo: agrosell@gmail.com" required>
+    <div id="error_email_comerciante">
+   </div>
     </td></tr>
      <tr>
       <td id="td_texto_contraseña">Contraseña</td>
