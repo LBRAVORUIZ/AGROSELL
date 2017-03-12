@@ -43,11 +43,11 @@ $(document).ready(function(){
 
 	$("#email_agricultor").change(function(){
             var email=$("#email_agricultor").val();
-             $.ajax({
-
+        
+         $.ajax({
         type: "POST",
         url: "email_agricultor.php",
-        data: "producto="+email,
+        data: "email="+email,
         success: function(resp)
         {
               document.getElementById("error_email_agricultor").innerHTML= resp;
