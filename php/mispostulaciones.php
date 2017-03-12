@@ -3,8 +3,6 @@
 <head>
 <meta name="google-site-verification" content="dIk2rhq6I40BzbVd5CIiax7XneW7E3VYCj5CWuxjzVk" />
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>AgroSell</title>
   <link rel="stylesheet" type="text/css" href="../css/general.css">
   <link rel="stylesheet" type="text/css" href="../css/pedido.css">
@@ -13,9 +11,6 @@
   <link rel="shortcut icon" sizes="100x100" href="../logo/agrosell.png">
   <link rel="stylesheet" type="text/css" href="../iconos/menu_categorias/font/flaticon.css">
 <script type="text/javascript" src="../script/menu_desplegable.js"></script>
-<script type="application/ld+json">
-
-{"@context":"http://agrosell.pe.hu","@type":"Plataforma Web","url":"http://agrosell.pe.hu","contactPoint":[{"@type":"ContactPoint","telephone":"983118757","contactType":"customer service"}]}</script>
 </head>
 <body>
 <header id="menu_superior">
@@ -99,6 +94,7 @@ while ($fila = $resultado->fetch_array(MYSQLI_BOTH)) {
  $resultado2 = $conexion->query($query2);
  $fila2 = $resultado2->fetch_array(MYSQLI_BOTH) ;
       echo "<tr>
+
       <td>&nbsp;&nbsp;$fila2[2]</td>
       <td>&nbsp;&nbsp;$fila2[4]</td>
       <td>&nbsp;&nbsp;$fila2[5]</td>

@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>AgroSell-Postulación</title>
   <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="../css/postulacion.css">
   <script src=": http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <link rel="shortcut icon" sizes="100x100" href="../logo/agrosell.png">
@@ -87,14 +86,16 @@ conexion();
 <div class="parte_superior">
 <div class="parte_superior_titulo"><?php echo $fila['producto_pedido'];?>
 <br>
-<a  href="javascript:enviar_postulacion()" class="parte_superior_texto_direccion"><span class="icon-location"></span><font><?php echo $fila['direccion_pedido'];?></font></a>
+<a class="parte_superior_texto_direccion"><span class="icon-location"></span><font><?php echo $fila['direccion_pedido'];?></font></a>
 </div>
+<!--
 <div class="parte_superior_iconos">
 <a href="" class="parte_superior_iconos_facebook"><span class="icon-facebook"></span></a>
 <a href="" class="parte_superior_iconos_twitter"><span class="icon-twitter"></span></a>
 <a href="" class="parte_superior_iconos_youtobe"><span class="icon-youtube"></span></a>
 <a href="" class="parte_superior_iconos_instagram"><span class="icon-instagram"></span></a>
 </div>
+-->
 </div>
 <br>
 <hr>
@@ -130,17 +131,12 @@ conexion();
 <div class="parte_contacto">
 <!--CONTACTO-FROMULARIO-SUPERIOR-->
 <div class="contacto_superior">
-<div class="contacto_superior_div">
 <font class="contacto_superior_monto"> <?php echo $fila['cantidad_pedido'];?> QQ</font>
 <br>
 <font class="contacto_superior_precio">(S/ <?php echo $fila['precio_pedido'];?> /QQ)</font>
-</div>
-<div class="contacto_superior_div">
-<a onclick="enviar_postulacion()" class="myButton_pag2">POSTULAR AHORA</a>
-</div>
+
 </div>
 
-<hr>
 <!--CONTACTO-FROMULARIO-MEDIO-->
 
 <div class="contacto_medio">
@@ -150,28 +146,29 @@ conexion();
 <table border="0" cellpadding="0" cellspacing="0">
    <tr>
     <th>Dirección</th>
-    <th>:<input  class="contacto_medio_div_formulario_input" type="text" name="direccion" required></th>
   </tr>
-<tr>
-    <th>Foto Producto</th>
-    <th>:<input class="contacto_medio_div_formulario_input contacto_medio_div_formulario_input_foto" type="file" name="imagen_producto" required></th>
+  <tr>
+    <th><input  class="contacto_medio_div_formulario_input" type="text" name="direccion" required></th>
+  </tr>
+   <br>
+   <tr>
+    <th><br>Foto Producto</th>
+  </tr>
+  <tr>
+  <th><br><input class="contacto_medio_div_formulario_input_file"  type="file" name="imagen_producto" required></th>
   </tr>
 </table>
 </form>
+<br>
+<center>
+ <a onclick="enviar_postulacion()" class="myButton_postular">Postular Ahora</a>
+ </center>
 </div>
 <div class="contacto_medio_div_recojo">
 <br>
 <font>Recogido por:</font>
 <br>
 <a href="" class="contacto_medio_recojo_texto">LINEA SAC</a>
-
-<div class="ec-stars-wrapper">
-  <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-  <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-  <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-  <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-  <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-</div>
 </div>
 
 <div class="contacto_medio_div_recojo">
