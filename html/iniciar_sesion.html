@@ -26,10 +26,10 @@
               {
                 document.frm_iniciar_sesion.submit()
               }
+
 $(document).ready(function(){
 	$("#email_comerciante").change(function(){
          var email=  $("#email_comerciante").val();
-        
         $.ajax({
 
         type: "POST",
@@ -40,10 +40,11 @@ $(document).ready(function(){
               document.getElementById("error_email_comerciante").innerHTML= resp;
         }
         });
+       });
 
 	$("#email_agricultor").change(function(){
-            var email=$("#email_agricultor").val();
-        
+      var email=$("#email_agricultor").val();
+
          $.ajax({
         type: "POST",
         url: "email_agricultor.php",
@@ -54,6 +55,8 @@ $(document).ready(function(){
         }
             
         });
+      });
+
 	});
 
   </script>
