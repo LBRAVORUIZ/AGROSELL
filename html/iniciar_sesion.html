@@ -148,7 +148,7 @@ $(document).ready(function(){
       <td id="td_texto_contraseña">Email</td>
     </tr>
     <tr><td>
-    <input type="email" name="email" class="input_crear_cuenta" id="email_agricultor" placeholder="Ejemplo: agrosell@gmail.com">
+    <input type="email" name="email" class="input_crear_cuenta" id="email_agricultor" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Ejemplo: agrosell@gmail.com">
    <div id="error_email_agricultor" class="error_email">
    </div>
     </td></tr>
@@ -209,7 +209,7 @@ $(document).ready(function(){
       <td id="td_texto_contraseña">Email</td>
     </tr>
     <tr><td>
-    <input type="email" name="email" class="input_crear_cuenta" id="email_comerciante" placeholder="Ejemplo: agrosell@gmail.com" required>
+    <input type="email" name="email" class="input_crear_cuenta" id="email_comerciante" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Ejemplo: agrosell@gmail.com" required>
     <div id="error_email_comerciante" class="error_email">
    </div>
     </td></tr>
